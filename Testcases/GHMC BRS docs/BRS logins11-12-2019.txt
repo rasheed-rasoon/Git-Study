@@ -1,0 +1,135 @@
+CIRCLE 38
+
+9912789197        TPS(23)
+9399942969        ACP(24)
+9849165974        DC(2)
+
+ZONAL 39
+9849666626        ACP(87)          
+9000113402        CP(88)
+9515101245        zc(7)
+
+
+HO 40
+9701362804        ACP(89)
+8008554954        CP (25) 
+9553615497      DTP(105)  ==  9989930634 CCP 2000123290
+9849908576    Commissioner(1)
+
+Addmin Login : 9989930333
+
+9246175149 -CSC Login
+
+
+
+filed verification updation --> forward new applciation --> approved 	
+
+
+CP revert back
+
+ZC revert back
+
+
+
+2000051638
+
+2000066434
+
+2000067754
+
+2000068984
+
+2000069090
+
+2000070391
+
+2000070921
+
+2000072026
+
+2000072126
+
+2000072185
+
+
+
+2000072853
+
+2000074222
+
+2000079798
+2000001025
+
+2000005014
+
+
+2000004362
+
+field verification updation --> forward to new applciation --> approval 
+
+field verification updation --> forward to new applciation --> rejected 
+
+field verification updation --> forward to new applciation --> revert back
+
+
+field verification updation --> forward to new applciation (revert back)
+
+field verification updation --> forward to new applciation (short fall intimation) 
+
+citizen login --> short fall app submission 
+
+2000066434
+
+2000070391
+18223
+
+
+I have wished u ,misunderstood 
+why not good
+rama hav no job
+who knows 
+
+
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\Program Files\Java\jdk1.8.0_91\bin;F:\softwares\apache-maven-3.3.9\bin;F:\softwares\apache-ant-1.9.7\bin;F:\Android\android-sdk-windows\tools;F:\Android\android-sdk-windows\platforms;
+
+
+2000072026
+2000007951
+2000014788 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dear Mohammed Hasnain,
+
+Greetings of the day.
+                                    I am Sheik Rasheed Ahmed,Working as software test engineer  in CENTER FOR GOOD GOVERNANCE.
+I have 6.2 years of experience in software testing.My experience include mainly  automation with selenium webdriver( "POM", "Agile", "Maven", "Jenkins" ) and done POC on "Appium"
+I have attached my resume for your reference and also find the below details
+
+Total Exp:   
+Current CTC:
+EXP CTC:
+Notice Period:
+
+
+Regards,
+Rasheed.

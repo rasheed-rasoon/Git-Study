@@ -1,0 +1,159 @@
+
+2000050139
+2000053112 
+
+2000053112 
+
+D211700083
+
+
+
+
+
+
+
+
+
+
+
+
+
+acp reports procedd and remarks
+2017 - 3000025964
+
+
+
+`1
+
+
+
+
+
+
+
+
+
+
+circle ()38
+
+9912789197        TPS(23)
+9399942969        ACP(24)
+9849165974        DC(2)
+
+ZONAL 39
+9849666626        ACP(87)          
+9000113402        CP(88)
+9515101245        zc(7)
+
+
+HO 40
+9701362804        ACP(89)
+ CP (25)
+9553615497      DTP(105)  ==  9989930634 CCP 2000123290
+9849908576    Commissioner(1)
+
+Addmin Login : 	
+9989930333
+
+
+http://inctest.apcgg.gov.in/GhmcLogin.aspx
+
+
+
+
+http://bugzilla.cgg.gov.in/enter_bug.cgi?product=GHMC
+
+Ho:
+
+
+field verification updation --> forward to new applcation --> forward to new application --> approve
+
+
+
+
+field verification updation --> forward to new applcation --> forward to new application --> reject 
+
+ACP(HO)--> reopen rejected list 
+
+ACP(HO)--> reports --> rejected list 
+
+all logins --> short fall intimated applciations 
+
+
+pending work : balance fee submitted applciations 
+
+
+
+
+
+Bug1) no field validation for mobile number
+
+Description
+
+
+
+
+Nvai
+
+9000478867
+
+
+zonal ACp:
+
+field verification check list
+
+field verification updation
+
+short fall intimated apps
+
+short fall submitted apps
+
+balance fee intimated
+
+
+
+2000014268 	16/DEC/2015 	Aitha. Bhoomalingam 	221560 	211560
+
+
+height 
+
+
+pending :
+'
+ACP (zonal):Proceedings Issued Applications 
+
+Zonal(ACP):Proceedings Issued Aplication With Documents & Remarks Entered By Officers 
+
+Zonal(ACP):height and category conditions
+
+
+QUERIES :
+
+IF THE CATEGORY AND HEIGHT IS BEEN CHANGED NEED TO KNOW THE CALCULATION PART
+
+
+
+21/06
+need confirmation :  
+
+need confirmation plot area ranges 
+
+
+issues :
+ 
+1)charges info not shoinf in acknowledgment 
+2) need confiramtion for charges ranges when unauthorized , resedential, resedential 
+
+3) auto populated amount paid should be disabled 
+4)citizen paid amount not showing in payment details (showing paid details as reg charges  )
+
+5)dd amount should not accept other than numbers , if it so showing servere rror 
+
+6)DD date accepting future dates
+
+7)payment details not showing applciation status
+
+
+2000056241  non commercial and less than 15
+
+

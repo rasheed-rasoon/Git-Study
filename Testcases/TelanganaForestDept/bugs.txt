@@ -1,0 +1,12 @@
+
+Bug1) no field validation for mobile number
+
+Description:mobile number accepting less than 10 digits 
+
+Bug2) once the user click on send OTP the field mobile number should be disabled 
+
+Bug 3)after session out applciation showing servere rror like shown in screenshot 
+Bug4 )back button is required	
+Bug 5: when the user click on reset button app showing server error 
+
+Bug 6: resend OTP fnctionality should be there

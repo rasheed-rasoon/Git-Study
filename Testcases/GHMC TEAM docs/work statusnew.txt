@@ -1,0 +1,315 @@
+EC51701434
+
+EC51701462
+
+EC51700858
+
+parwathi
+
+
+vinay dutt
+Kumar Goud
+
+Lachi ram
+
+Ravinderbabu
+Ravi shankar
+lachiram
+
+
+contractor acceptance :
+
+dismantling  of cc ramps
+
+
+
+
+1)MBOOK BOQ item list is too slow when user scrolls down 
+
+2)DEE sign and contractor sign should mention with mandatory sign
+
+3)
+
+
+
+HD :
+
+1)LOI and technical date can be on same date (devidation)
+
+2)LOI and agreemnt can be on same date(devidation)
+
+3)LOI should be between technical sanction date and agreement date (critical)
+
+4)drawing 
+
+
+
+04/07/2018
+
+EC51701431
+
+Ravinder babu 
+Kumar goud
+Lachiram
+Shaker Lal
+
+
+05/07/2018
+
+
+without technicval sanction details , fill LOI details app showing an alert like "details can not be null" .
+
+
+EC51701310
+EC51701431
+
+Ravinder babu
+Kumar goud
+Lachiram
+
+
+BOQ 1: dismantling of exisitng structure 
+
+
+
+pending works today :
+
+1)Site handover date  validations Note : app accepting on technical sanction date , agreement date ,LOI date
+
+2)should test manually HD entered tender percentage value
+
+
+06/07/2018
+
+when DEE does contractor signs then work will move to the  AEE for recording and to the EE for , If EE make any changes then , How can 
+the way to complte the billing process 
+
+only recorded item visible to EE
+
+contractor signed item apps not appearing in AEE login .````````````````````0
+
+
+EC5170108001
+EC51700857
+EC51701204	
+ravinder babu
+
+Kumar goud
+
+Lachiram
+\
+
+issue s:
+
+Issue 1:
+
+when Hd provide technical sanction, agreemnt, LOi . all the docs except estimated axcel application not saving LOI details and 
+\Upload Efile (Only pdf file)
+Upload Drawing( Only Pdf file)
+Number of Provisions
+Including LS.
+
+
+issue 2: techincal sanction should not be before admin sanction date
+
+Issue 3: LOI date accepting less than techinical sanction date 
+
+
+10/07/2018
+
+EC51701499
+
+EC31700266
+
+
+12/07/2018
+
+app not considering PI value as single entity 
+
+Issues to be remembered :
+
+
+
+
+1)even  the satus is  completed , user able to rcord 
+
+2)After edit Keyupad not working
+
+
+3)touch Keypad working on power text box (doubt)
+
+4)once user uses the power symbol(operator) , then except plus (+) the entire keypad not working (reported)
+
+5)M book when user scrolls right to the end then app is misbehaving 
+
+work to be done 
+
+5)if user enter invalid formula in the sufix then then enter some value in L or B or D the app is getting crashed 
+
+6)Mbook 00> click on back --> not working  (reported)
+
+
+7)Units not displaying in MBOOK (AEE`,DEE even AEE mentioned) (reported)
+8)New record --> change formula --> click on câp(^) --> text box will be autopopulated -->without enter anything click on OK applicaiton getting crashed  (reported)
+
+9)Units accepting other than characters (reported)
+
+10)DEE signature shoiuld mark as mandatory
+
+
+11)All EE lachiram . can act as HD (recorded)
+
+12)Units auto population working in AEE not working DEE (reported)
+
+13)when EE edit ,DEE recorded items  , that quanity reflecting accurately in DEE contractor acceptance screen but L and B and D values showing as invali  (reported)
+14)there is no column with the anme Unit in MBOOK(reported)
+
+
+
+
+1)SEE flow should check.
+2)EE flow should be change (working fine when contractor signature completed )
+
+
+
+DOubts :
+
+Estimated nfo in Tab not scrolling
+
+only DEE recorded BOQ appear to the EE
+
+touck key pad working in Cap(^)
+need to be tested :
+
+
+once HD upload a doc , then he can not remove that doc
+
+once HD upload invalid estimation then Uploaded Efile: and Uploaded Drawing: are removing (later working)
+
+when EE submit already submitted BOQ, what will happen 
+
+SEE flow should check with EC51700980
+
+21 less in ERP, changed as 21 excess
+
+issues :
+officer alignment issue
+
+for some records "no records"
+
+EC51800111
+
+
+conditional sign off
+
+
+
+As per the document and KT , I Have tested GHMC TEAM HD Login .
+All the issues have been verified and closed .
+
+Now I am giving conditional sign of due to the below points
+
+
+
+Application accepting more than 5 mb pdf files 
+
+As mentioned in the document HD login tested only  in Google chrome
+
+Once LOI ,technical, Agreement dates are submitted , user able to select the calender.
+calender is not dates format is not valid 
+
+EC51800117
+D131800004
+
+
+
+Issues 
+1)enter units and if user try to enter other than character then the value becomes double 
+
+2)when user use PI , app not considering whole value of PI as single entity 
+
+3) When adding records , app shwoing Not saved
+
+4)in quantity formula -->Power layout should close once user clicks on Ok
+
+5)change formula --> when user enter any operator , that operator is appearing in the whole formula 
+
+
+
+18/07/2018
+
+today test plan :
+
+
+Billing :
+
+
+AEE and DEE and EE work flow
+
+
+Mobile
+should retest resloved issues 
+
+
+need to test: 
+
+1)THIRD PARTY QC,GHMC QC DOCUMENt,WORK SLIP,Other Documents needs to be checked in DEE
+2)revert back functionality should be tested 
+EC51701297
+
+100
+100
+100
+100'
+
+
+
+19/07/2018
+Mbook pdf down load not working 
+
+should complete 
+
+while using power layout , if we select PI , then unable to click on "OK"
+app allowing continous PI which leads to the app crashed 
+
+app accepting * % + contiuously 
+app getting crashed ,combination of open and closed brace with any operator or special character ,
+
+
+MBOOK : pdf having invalid format
+
+
+without workrecord app showing in DEE login
+
+Recording : No field validation for units
+
+DEE check measured work not reflecting in to EE login
+
+
+Billing :
+
+issue 1:pass order showing twice
+
+
+
+
+conditions for conditional sign off :
+
+Login :View documents showing blank 
+
+Need to remember site handover screen
+
+when no record in MBOOK, then app navigating to web application 
+without AEE record when DEE does DEE record , In MBOOK all fields showing as null for AEE recording 
+
+after site handover	able to record	able to record
+
+D131800004
+
+
+
+
+
+
+
+
