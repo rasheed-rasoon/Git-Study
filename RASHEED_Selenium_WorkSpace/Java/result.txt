@@ -1,0 +1,2 @@
+set classpath=F:\RASHEED_Selenium_WorkSpace\Java\bin;F:\RASHEED_Selenium_WorkSpace\Selenium_JXL_Jar\*
+java org.testng.TestNG results.xml

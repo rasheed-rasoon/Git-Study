@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CLick_Know_No_Of_Links_Sample.java&apos; to &apos;Ts_Factories/src/Selenium_Pac&apos;&#x0D;&#x0A;- Original project: &apos;Java&apos;&#x0D;&#x0A;- Destination element: &apos;Ts_Factories/src/Selenium_Pac&apos;&#x0D;&#x0A;- Original element: &apos;Java_Pac.CLick_Know_No_Of_Links_Sample.java&apos;" description="Copy compilation unit" destination="=Ts_Factories/src&lt;Selenium_Pac" element1="/src&lt;Java_Pac{CLick_Know_No_Of_Links_Sample.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1463381815567" units="1" version="1.0"/>
+</session>

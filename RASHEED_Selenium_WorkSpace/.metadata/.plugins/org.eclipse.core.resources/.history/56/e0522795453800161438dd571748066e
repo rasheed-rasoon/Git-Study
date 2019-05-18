@@ -1,0 +1,18 @@
+package com.org.Maven_Practice;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.testng.annotations.Test;
+
+import jxl.Sheet;
+import jxl.Workbook;
+
+public class SampleRetrieving {
+  @Test
+  public void f() throws Exception {
+	  FileInputStream fis = new FileInputStream("F:`\\RASHEED_Selenium_WorkSpace\\Maven_Practice\\SampleTestData.xls");
+		Workbook wb = Workbook.getWorkbook(fis);
+		Sheet s = wb.getSheet("APLARRInputs");
+  }
+}

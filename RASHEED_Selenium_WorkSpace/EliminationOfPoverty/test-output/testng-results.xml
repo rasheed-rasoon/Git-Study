@@ -1,0 +1,1620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="32" failed="1" total="33" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35028" started-at="2017-03-27T10:42:45Z" finished-at="2017-03-27T10:43:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35028" started-at="2017-03-27T10:42:45Z" finished-at="2017-03-27T10:43:20Z">
+      <class name="com.cgg.testcases.EliminationpovertyTestcase">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="beforetest" is-config="true" duration-ms="7032" started-at="2017-03-27T16:12:38Z" finished-at="2017-03-27T16:12:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="FAIL" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="34787" started-at="2017-03-27T16:12:45Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabada, TC=TC-001, Remarks/SpecialAttention=No remarks1,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=P, NameOfTheFather=kittu, MarriedStatus=Married, Runmode=Y, IdProofNo=123456789012, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=Cgg, PeriodOfHomeles=One Day, Caste=OC, Education Qualification=Primary School, Photo upload=C:\\Users\\Brahmakumar\\Downloads\\ghmcbug2.png, Age=18, Reasons for Homelessness=UnEmployed (job Search), HealthStatus=Normal}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.cgg.pages.TestBase.takeScreenshot(TestBase.java:440)
+	at com.cgg.pages.TestBase.reportFail(TestBase.java:457)
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="1" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadb, TC=TC-002, Remarks/SpecialAttention=No remarks2,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=rajesh, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789013, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=12345, PeriodOfHomeles=2 to 7 Days, Caste=SC, Education Qualification=Middle School, Photo upload=, Age=19, Reasons for Homelessness=Family Disputes, HealthStatus=Illness}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadc, TC=TC-003, Remarks/SpecialAttention=No remarks3,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=suresh, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789014, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=!@#$%^&*()_+-={}[]|\:";',./<>?, PeriodOfHomeles=8 Days to  1 Month, Caste=ST, Education Qualification=Matriculate, Photo upload=, Age=20, Reasons for Homelessness=Health Issues, HealthStatus=Open Wounds}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="2" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadd, TC=TC-004, Remarks/SpecialAttention=No remarks4,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=chinni, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789015, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=rajesh123, PeriodOfHomeles=1 to 3 Months, Caste=BC, Education Qualification=Primary School, Photo upload=, Age=21, Reasons for Homelessness=Recovering patient, HealthStatus=TB}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabade, TC=TC-005, Remarks/SpecialAttention=No remarks5,   DisabilityifAny=Others, Occupation=Others, DataFlag=N, NameOfTheFather=ammu, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789016, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=, PeriodOfHomeles=3 to 6 Months, Caste=Minority, Education Qualification=Middle School, Photo upload=, Age=22, Reasons for Homelessness=Destitute, HealthStatus=Hiv +Ve}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="3" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadf, TC=TC-006, Remarks/SpecialAttention=No remarks6,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=raj, MarriedStatus=Married, Runmode=N, IdProofNo=123456789017, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=rajesh, PeriodOfHomeles=6 Months to 1 Year, Caste=Others, Education Qualification=, Photo upload=, Age=23, Reasons for Homelessness=Debts, HealthStatus=GeneralSick}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="3" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadg, TC=TC-007, Remarks/SpecialAttention=No remarks7,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=raju, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789018, LocationofpresentStay=, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=suresh, PeriodOfHomeles=More Than 1 Year, Caste=OC, Education Qualification=Primary School, Photo upload=, Age=24, Reasons for Homelessness=patient attendant, HealthStatus=Chronic Sick}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="2" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadh, TC=TC-008, Remarks/SpecialAttention=No remarks8,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=suri, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789019, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=chinni, PeriodOfHomeles=One Day, Caste=SC, Education Qualification=Middle School, Photo upload=, Age=25, Reasons for Homelessness=Others, HealthStatus=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadi, TC=TC-009, Remarks/SpecialAttention=No remarks9,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=naresh, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789020, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=ammu, PeriodOfHomeles=, Caste=ST, Education Qualification=Matriculate, Photo upload=, Age=26, Reasons for Homelessness=UnEmployed (job Search), HealthStatus=Normal}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadj, TC=TC-010, Remarks/SpecialAttention=No remarks10,   DisabilityifAny=Others, Occupation=Others, DataFlag=N, NameOfTheFather=govind, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789021, LocationofpresentStay=Temples/Holy Places, IdentityProof=, Stay =Temporary, NameOfTheHomeless=raj, PeriodOfHomeles=One Day, Caste=BC, Education Qualification=Primary School, Photo upload=, Age=27, Reasons for Homelessness=Family Disputes, HealthStatus=Illness}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadk, TC=TC-011, Remarks/SpecialAttention=No remarks11,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=govinda, MarriedStatus=Married, Runmode=N, IdProofNo=, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=raju, PeriodOfHomeles=2 to 7 Days, Caste=Minority, Education Qualification=Middle School, Photo upload=, Age=28, Reasons for Homelessness=Health Issues, HealthStatus=Open Wounds}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="1" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="0" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadl, TC=TC-012, Remarks/SpecialAttention=No remarks12,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=giri, MarriedStatus=Unmarried, Runmode=N, IdProofNo=#$@$#@%#^%#%, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=suri, PeriodOfHomeles=8 Days to  1 Month, Caste=Others, Education Qualification=Primary School, Photo upload=, Age=29, Reasons for Homelessness=Recovering patient, HealthStatus=Normal}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadm, TC=TC-013, Remarks/SpecialAttention=No remarks13,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=hari, MarriedStatus=Widow, Runmode=N, IdProofNo=sadssdsdfgghgh, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=naresh, PeriodOfHomeles=One Day, Caste=OC, Education Qualification=Middle School, Photo upload=, Age=30, Reasons for Homelessness=Destitute, HealthStatus=Illness}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="1" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="3" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadn, TC=TC-014, Remarks/SpecialAttention=,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=suri, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789022, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=govind, PeriodOfHomeles=2 to 7 Days, Caste=SC, Education Qualification=Matriculate, Photo upload=, Age=31, Reasons for Homelessness=Debts, HealthStatus=Open Wounds}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabado, TC=TC-015, Remarks/SpecialAttention=#$@$#@%#^%#%,   DisabilityifAny=Others, Occupation=Others, DataFlag=N, NameOfTheFather=naresh, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789023, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=govinda, PeriodOfHomeles=8 Days to  1 Month, Caste=ST, Education Qualification=Primary School, Photo upload=, Age=32, Reasons for Homelessness=patient attendant, HealthStatus=TB}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadp, TC=TC-016, Remarks/SpecialAttention=123214365476578000,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=govind, MarriedStatus=Married, Runmode=N, IdProofNo=123456789024, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=giri, PeriodOfHomeles=1 to 3 Months, Caste=BC, Education Qualification=Middle School, Photo upload=, Age=34, Reasons for Homelessness=Others, HealthStatus=Hiv +Ve}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="1" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="0" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadq, TC=TC-017, Remarks/SpecialAttention=No remarks16,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789025, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=hari, PeriodOfHomeles=3 to 6 Months, Caste=Minority, Education Qualification=Matriculate, Photo upload=, Age=35, Reasons for Homelessness=UnEmployed (job Search), HealthStatus=GeneralSick}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="0" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadr, TC=TC-018, Remarks/SpecialAttention=No remarks17,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=!@#$%^&*()?, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789026, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=harish, PeriodOfHomeles=6 Months to 1 Year, Caste=Others, Education Qualification=Primary School, Photo upload=, Age=33, Reasons for Homelessness=Family Disputes, HealthStatus=Chronic Sick}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="0" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabads, TC=TC-019, Remarks/SpecialAttention=No remarks18,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=2.4435436546E10, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789027, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=harshith, PeriodOfHomeles=More Than 1 Year, Caste=ST, Education Qualification=Middle School, Photo upload=, Age=36, Reasons for Homelessness=Health Issues, HealthStatus=Normal}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="0" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadt, TC=TC-020, Remarks/SpecialAttention=No remarks19,   DisabilityifAny=Others, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=kittu17, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789028, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=rasheed, PeriodOfHomeles=One Day, Caste=SC, Education Qualification=Matriculate, Photo upload=, Age=37, Reasons for Homelessness=Recovering patient, HealthStatus=Illness}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="28" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadu, TC=TC-021, Remarks/SpecialAttention=No remarks20,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=rasheed, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789029, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=mohan, PeriodOfHomeles=2 to 7 Days, Caste=ST, Education Qualification=Primary School, Photo upload=, Age=, Reasons for Homelessness=Destitute, HealthStatus=Open Wounds}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadv, TC=TC-022, Remarks/SpecialAttention=No remarks21,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=mohan, MarriedStatus=Married, Runmode=N, IdProofNo=123456789030, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=ganesh, PeriodOfHomeles=8 Days to  1 Month, Caste=SC, Education Qualification=Middle School, Photo upload=, Age=10.0, Reasons for Homelessness=Debts, HealthStatus=TB}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="0" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadw, TC=TC-023, Remarks/SpecialAttention=No remarks22,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=ganesh, MarriedStatus=, Runmode=N, IdProofNo=123456789031, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=deepak, PeriodOfHomeles=1 to 3 Months, Caste=Minority, Education Qualification=Matriculate, Photo upload=, Age=38, Reasons for Homelessness=patient attendant, HealthStatus=Hiv +Ve}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="0" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadx, TC=TC-024, Remarks/SpecialAttention=No remarks23,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=deepak, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789032, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=deepu, PeriodOfHomeles=3 to 6 Months, Caste=, Education Qualification=Primary School, Photo upload=, Age=39, Reasons for Homelessness=Others, HealthStatus=GeneralSick}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:19Z" finished-at="2017-03-27T16:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="21" started-at="2017-03-27T16:13:19Z" data-provider="getData" finished-at="2017-03-27T16:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabady, TC=TC-025, Remarks/SpecialAttention=No remarks24,   DisabilityifAny=Hearing, Occupation=, DataFlag=N, NameOfTheFather=deepu, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789033, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=mani, PeriodOfHomeles=6 Months to 1 Year, Caste=SC, Education Qualification=Middle School, Photo upload=, Age=40, Reasons for Homelessness=UnEmployed (job Search), HealthStatus=Chronic Sick}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:20Z" data-provider="getData" finished-at="2017-03-27T16:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =12345, TC=TC-026, Remarks/SpecialAttention=No remarks25,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=mani, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789034, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=rao, PeriodOfHomeles=More Than 1 Year, Caste=ST, Education Qualification=Matriculate, Photo upload=, Age=41, Reasons for Homelessness=patient attendant, HealthStatus=Normal}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:20Z" data-provider="getData" finished-at="2017-03-27T16:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =!@#$%^&*()_+-={}[]|\:";',./<>?, TC=TC-027, Remarks/SpecialAttention=No remarks26,   DisabilityifAny=Physical, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=rao, MarriedStatus=Married, Runmode=N, IdProofNo=123456789035, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=venkat, PeriodOfHomeles=One Day, Caste=BC, Education Qualification=Primary School, Photo upload=, Age=42, Reasons for Homelessness=Health Issues, HealthStatus=Illness}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:20Z" data-provider="getData" finished-at="2017-03-27T16:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =rajesh123, TC=TC-028, Remarks/SpecialAttention=No remarks27,   DisabilityifAny=Hearing, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=venkat, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789036, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=rama, PeriodOfHomeles=2 to 7 Days, Caste=Minority, Education Qualification=Middle School, Photo upload=, Age=43, Reasons for Homelessness=Recovering patient, HealthStatus=Open Wounds}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:20Z" data-provider="getData" finished-at="2017-03-27T16:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =, TC=TC-029, Remarks/SpecialAttention=No remarks28,   DisabilityifAny=Visual, Occupation=Self Employed, DataFlag=N, NameOfTheFather=rama, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=krishna, PeriodOfHomeles=8 Days to  1 Month, Caste=Others, Education Qualification=Matriculate, Photo upload=, Age=44, Reasons for Homelessness=Debts, HealthStatus=TB}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="1" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="0" started-at="2017-03-27T16:13:20Z" data-provider="getData" finished-at="2017-03-27T16:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =Secunderabadz, TC=TC-030, Remarks/SpecialAttention=No remarks29,   DisabilityifAny=, Occupation=No Occupation, DataFlag=N, NameOfTheFather=krishna, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=siva, PeriodOfHomeles=More Than 1 Year, Caste=SC, Education Qualification=Matriculate, Photo upload=, Age=41, Reasons for Homelessness=patient attendant, HealthStatus=Normal}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="0" started-at="2017-03-27T16:13:20Z" data-provider="getData" finished-at="2017-03-27T16:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =hyderabad, TC=TC-031, Remarks/SpecialAttention=No remarks30,   DisabilityifAny=Others, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=siva, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=venkat, PeriodOfHomeles=One Day, Caste=ST, Education Qualification=Primary School, Photo upload=, Age=42, Reasons for Homelessness=, HealthStatus=Illness}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="1" started-at="2017-03-27T16:13:20Z" data-provider="getData" finished-at="2017-03-27T16:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =hyderguda, TC=TC-032, Remarks/SpecialAttention=No remarks31,   DisabilityifAny=Physical, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=rama, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =, NameOfTheHomeless=rama, PeriodOfHomeles=2 to 7 Days, Caste=BC, Education Qualification=Middle School, Photo upload=, Age=43, Reasons for Homelessness=Health Issues, HealthStatus=Open Wounds}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="f" duration-ms="25" started-at="2017-03-27T16:13:20Z" data-provider="getData" finished-at="2017-03-27T16:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PlaceofOccupation =hyder, TC=TC-033, Remarks/SpecialAttention=No remarks32,   DisabilityifAny=Hearing, Occupation=Self Employed, DataFlag=N, NameOfTheFather=krishna, MarriedStatus=Married, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=krishna, PeriodOfHomeles=8 Days to  1 Month, Caste=Minority, Education Qualification=Matriculate, Photo upload=, Age=44, Reasons for Homelessness=patient attendant, HealthStatus=TB}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Test Case Number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="0" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="Aftertest()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="Aftertest" is-config="true" duration-ms="1" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftertest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.cgg.testcases.EliminationpovertyTestcase@58695725]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2017-03-27T16:13:20Z" finished-at="2017-03-27T16:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.cgg.testcases.EliminationpovertyTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

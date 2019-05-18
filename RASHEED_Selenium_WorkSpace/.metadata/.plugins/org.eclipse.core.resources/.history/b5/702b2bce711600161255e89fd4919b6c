@@ -1,0 +1,23 @@
+package Java_Pac;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+
+public class Url_screenShots {
+	public WebDriver driver;
+	private static String[] links = null;
+	 private static int linksCount = 0;
+  @Test
+  public void f() {
+  }
+  @BeforeTest
+  public void beforeTest() {
+  }
+
+  @AfterTest
+  public void afterTest() {
+  }
+
+}

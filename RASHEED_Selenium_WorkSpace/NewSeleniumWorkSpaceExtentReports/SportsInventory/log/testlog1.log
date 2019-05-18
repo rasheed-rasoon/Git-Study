@@ -1,0 +1,19 @@
+2018-11-20 12:13:42,517 [main] INFO devpinoyLogger - Loading Property files
+2018-11-20 12:13:59,430 [main] INFO devpinoyLogger - Enter text
+2018-11-20 12:13:59,619 [main] INFO devpinoyLogger -  user name entered
+2018-11-20 12:13:59,620 [main] INFO devpinoyLogger - Enter text
+2018-11-20 12:13:59,881 [main] INFO devpinoyLogger - passowrd entered
+2018-11-20 12:14:00,011 [main] INFO devpinoyLogger - Clicking on element with using java script click
+2018-11-20 12:14:03,593 [main] INFO devpinoyLogger - Enter text
+2018-11-20 12:15:33,899 [main] INFO devpinoyLogger -  user name entered
+2018-11-20 12:15:33,899 [main] INFO devpinoyLogger - Enter text
+2018-11-20 12:17:04,155 [main] INFO devpinoyLogger - passowrd entered
+2018-11-20 12:18:35,543 [main] INFO devpinoyLogger - Enter text
+2018-11-20 12:20:05,719 [main] INFO devpinoyLogger -  user name entered
+2018-11-20 12:20:05,720 [main] INFO devpinoyLogger - Enter text
+2018-11-20 12:21:36,087 [main] INFO devpinoyLogger - passowrd entered
+2018-11-20 12:23:07,228 [main] INFO devpinoyLogger - Enter text
+2018-11-20 12:24:37,435 [main] INFO devpinoyLogger -  user name entered
+2018-11-20 12:24:37,437 [main] INFO devpinoyLogger - Enter text
+2018-11-20 12:26:07,706 [main] INFO devpinoyLogger - passowrd entered
+2018-11-20 12:27:38,166 [main] INFO devpinoyLogger - Closing Browser

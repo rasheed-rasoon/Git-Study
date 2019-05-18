@@ -1,0 +1,7 @@
+<suite name="suite">
+<test name="test">
+<classes>
+<class name="Selenium.Actions_Class"></class>
+</classes>
+</test>
+</suite>

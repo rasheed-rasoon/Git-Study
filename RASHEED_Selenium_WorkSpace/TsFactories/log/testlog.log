@@ -1,0 +1,62 @@
+2018-05-23 14:31:46,203 - devpinoyLogger -INFO - Loading Property files
+2018-05-23 14:31:57,726 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:31:58,221 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:31:58,501 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:01,834 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:02,106 - devpinoyLogger -INFO - Element is not attached to the page document [Ljava.lang.StackTraceElement;@6cfcd46d
+2018-05-23 14:32:02,107 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:05,316 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:05,779 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:08,304 - devpinoyLogger -INFO - waiting for success alert
+2018-05-23 14:32:08,357 - devpinoyLogger -INFO - Verifying the Alert Message CItiZen Grievance
+2018-05-23 14:32:08,403 - devpinoyLogger -INFO - Actual Alert Message :-(Thanks for submitting the grievance) Matched With Expected Alert Message :-() (-Passed-)
+2018-05-23 14:32:10,442 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:10,736 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:11,054 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:13,697 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:14,212 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:17,457 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:18,388 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:20,759 - devpinoyLogger -INFO - waiting for success alert
+2018-05-23 14:32:20,760 - devpinoyLogger -INFO - Verifying the Alert Message CItiZen Grievance
+2018-05-23 14:32:20,789 - devpinoyLogger -INFO - Actual Alert Message :-(Thanks for submitting the grievance) Matched With Expected Alert Message :-() (-Passed-)
+2018-05-23 14:32:22,011 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:22,533 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:22,840 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:26,970 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:27,437 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:30,722 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:31,256 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:33,215 - devpinoyLogger -INFO - waiting for success alert
+2018-05-23 14:32:33,218 - devpinoyLogger -INFO - Verifying the Alert Message CItiZen Grievance
+2018-05-23 14:32:33,294 - devpinoyLogger -INFO - Actual Alert Message :-(Thanks for submitting the grievance) Matched With Expected Alert Message :-() (-Passed-)
+2018-05-23 14:32:34,282 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:34,566 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:34,875 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:38,786 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:39,168 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:42,361 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:43,367 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:45,612 - devpinoyLogger -INFO - waiting for success alert
+2018-05-23 14:32:45,613 - devpinoyLogger -INFO - Verifying the Alert Message CItiZen Grievance
+2018-05-23 14:32:45,644 - devpinoyLogger -INFO - Actual Alert Message :-(Thanks for submitting the grievance) Matched With Expected Alert Message :-() (-Passed-)
+2018-05-23 14:32:46,729 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:47,260 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:47,534 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:51,164 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:51,614 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:54,805 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:55,556 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:32:58,758 - devpinoyLogger -INFO - waiting for success alert
+2018-05-23 14:32:58,759 - devpinoyLogger -INFO - Verifying the Alert Message CItiZen Grievance
+2018-05-23 14:32:58,825 - devpinoyLogger -INFO - Actual Alert Message :-(Thanks for submitting the grievance) Matched With Expected Alert Message :-() (-Passed-)
+2018-05-23 14:32:59,888 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:33:00,268 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:33:00,552 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:33:02,652 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:33:03,149 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:33:06,305 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:33:06,750 - devpinoyLogger -INFO - Enter text
+2018-05-23 14:33:06,898 - devpinoyLogger -INFO - waiting for success alert
+2018-05-23 14:33:06,899 - devpinoyLogger -INFO - Verifying the Alert Message CItiZen Grievance
+2018-05-23 14:33:07,278 - devpinoyLogger -INFO - Closing Browser

@@ -1,0 +1,11 @@
+<suite name="TsFact Suite">
+    <test name="TsFact Test">
+        <classes>
+            <class name="com.cgg.testcases.PlanOfAppOfficerProcessTest"/>
+        
+               <class name="com.cgg.testcases.AmendmentOfLicenceOfficerProcess"/>
+                 <class name="com.cgg.testcases.TransferOfLicenceOfficerProcess"/> 
+        </classes>
+        
+    </test>
+    </suite>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="F:\RASHEED_Selenium_WorkSpace\NewSeleniumWorkSpaceExtentReports\SportsInventory"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\NewSeleniumWorkSpaceExtentReports\TsFactories-ExtentReports"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Brahmakumar\Desktop\RasheedGit\SeleniumGridPractice\testng.xml"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\NewSeleniumWorkSpaceExtentReports\com.cgg.mavencommandspractice"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\NewSeleniumWorkSpaceExtentReports\TsFactories-ExtentReports\pom.xml"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\NewSeleniumWorkSpaceExtentReports\com.learn.cucumber"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\NewSeleniumWorkSpaceExtentReports\SportsInventory\src\test\java\rough\CollectionFrameWork.java"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\NewSeleniumWorkSpaceExtentReports\SportsInventory\src\test\java\com\cgg\testcases\TestBase.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="Sample.Pluin"/>
+			<item value="MavenJenkins"/>
+			<item value="MavenJenkins.Sample"/>
+			<item value="SeleniumGridPractice.SeleniumGridPractice"/>
+			<item value="com.cgg.mavencommandspractice.com.cgg.mavencommandspractice"/>
+			<item value="com.practice.mavencommands.com.practice.mavencommands"/>
+			<item value="com.learn.cucumber"/>
+			<item value="com.learn.cucumber.com.learn.cucumber"/>
+			<item value="com.learn.cucumber.CucumberMaven"/>
+		</list>
+		<list key="groupId">
+			<item value="Sample"/>
+			<item value="MavenJenkins"/>
+			<item value="SeleniumGridPractice"/>
+			<item value="com.cgg.mavencommandspractice"/>
+			<item value="com.practice.mavencommands"/>
+			<item value="com.learn.cucumber"/>
+		</list>
+		<list key="artifactId">
+			<item value="Pluin"/>
+			<item value="Sample"/>
+			<item value="SeleniumGridPractice"/>
+			<item value="com.cgg.mavencommandspractice"/>
+			<item value="com.practice.mavencommands"/>
+			<item value="com.learn.cucumber"/>
+			<item value="CucumberMaven"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

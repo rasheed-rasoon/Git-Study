@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;JdbcConnection.java&apos; to &apos;tsfact/src/com.cgg.Rough&apos;&#x0D;&#x0A;- Original project: &apos;TsFactories-ExtentReports&apos;&#x0D;&#x0A;- Destination element: &apos;tsfact/src/com.cgg.Rough&apos;&#x0D;&#x0A;- Original element: &apos;rough.JdbcConnection.java&apos;" description="Copy compilation unit" destination="=tsfact/src&lt;com.cgg.Rough" element1="/src\/test\/java&lt;rough{JdbcConnection.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1487159453265" units="1" version="1.0"/>
+</session>

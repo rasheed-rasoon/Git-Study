@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestBase.java&apos; to &apos;TsFactories-ExtentReports/src/test/java/com.cgg.testcases&apos;&#x0D;&#x0A;- Original project: &apos;SportsInventory&apos;&#x0D;&#x0A;- Destination element: &apos;TsFactories-ExtentReports/src/test/java/com.cgg.testcases&apos;&#x0D;&#x0A;- Original element: &apos;com.cgg.testcases.TestBase.java&apos;" description="Copy compilation unit" destination="=TsFactories-ExtentReports/src\/test\/java&lt;com.cgg.testcases" element1="/src\/test\/java&lt;com.cgg.testcases{TestBase.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1551330710256" units="1" version="1.0"/>
+</session>

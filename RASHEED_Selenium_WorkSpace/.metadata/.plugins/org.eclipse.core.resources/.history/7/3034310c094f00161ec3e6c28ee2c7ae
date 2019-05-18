@@ -1,0 +1,66 @@
+package Reading_Services_WebTablesData;
+
+import org.testng.annotations.Test;
+
+import ts_Factories_Pac.Form_Filling.Helper_Ts_Factories;
+
+public class District_Call extends Helper_Ts_Factories {
+	@Test(description = "login with Entreprenuer and goto plan and approval service and "
+			+ "click on partial submission and check for the application process status in home page web table", enabled = false)
+	public void testCase_01() throws Exception {
+
+		login("rasheed", "R@sheed66");
+		Thread.sleep(2000);
+		dataDriven("PlanOfApproval");
+		Thread.sleep(3000);
+		get_Payment_WebTable_content();
+		goToHome_HomePage();
+		Thread.sleep(2000);
+		// entreprenuer_Col_header("Form Submission",get_Application_number);
+		entreprenuerLogin_WebTable("Form Submission", get_Application_number);
+		verify_Status("Completed");
+
+	}
+
+	@Test(enabled = true)
+	public void testCase_02() throws Exception {
+try{
+		login("DOF","guest");
+		Thread.sleep(2000);
+		click_View_Report_Select_TSFactories();
+		previous__Col_Header_Count_DOF();
+		Thread.sleep(2000);
+		goToHome_HomePage();
+		click_View_Report_Select_TSFactories();
+		dofLogin_WebTable();
+		
+		Thread.sleep(2000);
+		//dofLogin_App_Process_WebTable("FRL0004998","View/Download certificate/Process");
+	
+		Thread.sleep(2000);
+		//System.out.println("Process_WebTable_Desired_Value is "+Process_WebTable_Desired_Value);
+		//Assert.assertEquals(Process_WebTable_Desired_Value,"Process");
+		
+		//System.out.println("both are equal");
+		
+		 //driver.findElement(By.linkText(Process_WebTable_Desired_Value)).click();
+			
+}
+catch(Exception e)
+{
+	}
+
+
+	}
+	@Test(enabled =false )
+	public void testCase_03() throws Exception {
+		login("rasheed","R@sheed66");
+		Thread.sleep(2000);
+		dataDriven("PlanOfApproval");
+
+
+
+	}
+
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cgg.Pages.roughOfficerDashboard&apos; to &apos;roughOfficerDashboardPage&apos;&#x0D;&#x0A;- Original project: &apos;tsfact&apos;&#x0D;&#x0A;- Original element: &apos;com.cgg.Pages.roughOfficerDashboard&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cgg.Pages.roughOfficerDashboardPage&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;roughOfficerDashboard&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.cgg.Pages{roughOfficerDashboard.java[roughOfficerDashboard" matchStrategy="1" name="roughOfficerDashboardPage" qualified="false" references="true" similarDeclarations="false" stamp="1480661407376" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,88 @@
+package Java_Pac;
+
+import org.testng.annotations.Test;
+
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
+
+import org.testng.annotations.BeforeTest;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+
+public class Url_screenShots {
+	public WebDriver driver;
+	private static String[] links = null;
+	 private static int linksCount = 0;
+  @Test
+  public void f() throws BiffException, IOException {
+	  DateFormat df = new SimpleDateFormat("yyyy_MMM_dd hh_mm_ss a");
+	    Date d = new Date();
+	    String time = df.format(d);
+	  
+	  FileInputStream fis = new FileInputStream("F:\\RASHEED_Selenium_WorkSpace\\GHMC)Project\\URL's.xls");  //creating reference variable for File input stream
+		Workbook wb = Workbook.getWorkbook(fis);
+		Sheet s = wb.getSheet(0);
+		//String str1 = "";
+		for (int i = 175; i< s.getRows(); i++) 
+		{
+	
+			try {
+				   String new_Folder="F:\\RASHEED_Selenium_WorkSpace\\url "+i+" "+time+" Screen shot";
+				    
+				  File f=new File(new_Folder);  //create a new folder for each url to save the corresponding screen shots for each 
+				   f.mkdir(); 
+				   
+				
+				   driver=new FirefoxDriver();	
+			
+	 if(s.getCell(1, i).getContents() != null)
+								
+	 driver.get(s.getCell(1, i).getContents());
+	 Thread.sleep(1000); 
+	 System.out.println("now navigating to " +s.getCell(0, i).getContents()+ " url");  // to know the current url status
+	 driver.manage().window().maximize();
+	 Thread.sleep(3000); 
+				
+	  List<WebElement> linksize = driver.findElements(By.tagName("a")); 
+	  linksCount = linksize.size();                                       //to get number of links for the particulat url
+	  System.out.println("Total no of links Available: "+linksCount);       // to get total number of links
+	 
+	  
+	  //Thread.sleep(3000);
+File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+FileUtils.copyFile(src,new File(""+f+"\\link  "+i+" "+time+".png"));  //taking screen shot and storing in the respective folder }
+			
+	  }
+			
+	   catch (Exception e) {
+		   System.out.println("url is not available");
+			//str = "Fail";
+	   }
+			driver.quit();
+		}
+  }
+  @BeforeTest
+  public void beforeTest() {
+  }
+
+  @AfterTest
+  public void afterTest() {
+  }
+
+}

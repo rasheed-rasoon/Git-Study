@@ -1,0 +1,7 @@
+2017-03-27 16:12:38,041 - devpinoyLogger -INFO - Loading Property files
+2017-03-27 16:13:18,956 - devpinoyLogger -INFO -  Alert Is Present:-That is not a valid file.
+Please upload a file with an extention of one of the following:
+
+jpg, jpeg, gif, png
+2017-03-27 16:13:19,308 - devpinoyLogger -INFO -  Alert Is Present:-Please Select stay
+2017-03-27 16:13:20,120 - devpinoyLogger -INFO - Closing Browser

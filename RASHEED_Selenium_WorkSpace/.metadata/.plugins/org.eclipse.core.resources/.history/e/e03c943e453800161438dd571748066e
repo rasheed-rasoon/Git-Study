@@ -1,0 +1,9 @@
+package com.org.Maven_Practice;
+
+import org.testng.annotations.Test;
+
+public class SampleRetrieving {
+  @Test
+  public void f() {
+  }
+}

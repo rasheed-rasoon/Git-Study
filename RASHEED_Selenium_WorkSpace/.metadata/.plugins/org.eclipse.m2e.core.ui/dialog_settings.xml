@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="443" key="x"/>
+		<item value="11" key="y"/>
+		<item value="530" key="height"/>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="F:\RASHEED_Selenium_WorkSpace\CGGSampleTest"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\CitizenGrievanceNew"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="F:\RASHEED_Selenium_WorkSpace\CGGSampleTest"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\CitizenGrievanceNew"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\JavaToipicWisePrograms\src\programsoncollections\HashMapToArraylist.java"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\JavaToipicWisePrograms"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\SWHostels\src\test\java\com\cgg\testcases\SWLoginTest.java"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\TsFactories-ExtentReports"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\TsFactories-ExtentReports\ReportConfig.xml"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\TsFactories-ExtentReports\src\test\java\rough\ReadExcelData.java"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\BMS\src\main\java\com\cgg\util\AssertionsUtil.java"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\TsFactories-ExtentReports\src\main\java\com\cgg\Pages\AmendmentOfLicenceDistrictWebTablePage.java"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\SampleExtentReportsPoject\src\main\java\com\cgg\testcases\SampleExtentReportsPoject"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\Ts_Factories_PageFactory_Automation"/>
+			<item value="C:\Users\Brahmakumar\Desktop\Factories_Tg_PageFactory\src\com\cgg\rough\Log4j.java"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\Ts_Fctories\src\test\java\Reading_Services_WebTablesData\District_Call.java"/>
+			<item value="F:\RASHEED_Selenium_WorkSpace\Maven_Practice\src\test\java\com\org\Maven_Practice\CLick_Know_No_Of_Links_Sample.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,53 @@
+package com.org.Maven_Practice;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.pagefactory.ByAll;
+import org.testng.annotations.AfterTest;
+
+public class Sample_TsFactories extends APLARRInputsHelper {
+	public WebDriver driver;
+  @Test
+  public void f() throws Exception {
+	  //Registered user log in 
+     // Thread.sleep(2000);
+	  driver.findElement(By.partialLinkText("Registered User Login")).click(); 
+      driver.findElement(By.xpath(".//*[@id='userName']")).sendKeys("rasheed");
+      driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("R@sheed66");
+      driver.findElement(new ByAll(By.name("login"),
+                  By.linkText("    LOGIN "),
+                  By.id("login"),
+                  By.xpath(".//*[@id='login']"))).click();
+      Thread.sleep(3000);
+      //driver.get("http://test.cgg.gov.in/tsfactories/newForm1.do");
+      dataDrivenAPLARRInputs();
+//      driver.findElement(By.id("lnk1")).click();
+//      boolean present=driver.findElement(By.xpath(".//*[@id='lnk1']")).isEnabled();
+//      System.out.println("element status is "+present);
+//      
+  }
+  @BeforeTest
+  public void beforeTest() throws Exception {
+	  String exePath = "F:\\softwares\\Drivers\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", exePath);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+
+//	   driver = new FirefoxDriver();
+//	driver.manage().window().maximize();
+////
+////		//driver.get("http://toolsqa.com/automation-practice-form/");
+  driver.get("http://test.cgg.gov.in/tsfactories/home.do");
+//	  System.out.println("going to wait some time");
+	  Thread.sleep(4000);
+//  
+	  }
+
+  @AfterTest
+  public void afterTest() {
+  }
+
+}

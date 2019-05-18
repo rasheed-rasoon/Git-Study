@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Brahmakumar\AppData\Local\Temp\testng-eclipse-2010079612\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">33 methods, 1 failed,  32 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabada, TC=TC-001, Remarks/SpecialAttention=No remarks1,   DisabilityifAn...)">f({PlaceofOccupation =Secunderabada, TC=TC-001, Remarks/SpecialAttention=No remarks1,   DisabilityifAn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadu, TC=TC-021, Remarks/SpecialAttention=No remarks20,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadu, TC=TC-021, Remarks/SpecialAttention=No remarks20,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadx, TC=TC-024, Remarks/SpecialAttention=No remarks23,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadx, TC=TC-024, Remarks/SpecialAttention=No remarks23,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadt, TC=TC-020, Remarks/SpecialAttention=No remarks19,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadt, TC=TC-020, Remarks/SpecialAttention=No remarks19,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =!@#$%^&amp;*()_+-={}[]|\:&quot;;&#039;,./&lt;&gt;?, TC=TC-027, Remarks/SpecialAttention=No remarks26...)">f({PlaceofOccupation =!@#$%^&*()_+-={}[]|\:";',./<>?, TC=TC-027, Remarks/SpecialAttention=No remarks26...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadd, TC=TC-004, Remarks/SpecialAttention=No remarks4,   DisabilityifAn...)">f({PlaceofOccupation =Secunderabadd, TC=TC-004, Remarks/SpecialAttention=No remarks4,   DisabilityifAn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabade, TC=TC-005, Remarks/SpecialAttention=No remarks5,   DisabilityifAn...)">f({PlaceofOccupation =Secunderabade, TC=TC-005, Remarks/SpecialAttention=No remarks5,   DisabilityifAn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadr, TC=TC-018, Remarks/SpecialAttention=No remarks17,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadr, TC=TC-018, Remarks/SpecialAttention=No remarks17,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadh, TC=TC-008, Remarks/SpecialAttention=No remarks8,   DisabilityifAn...)">f({PlaceofOccupation =Secunderabadh, TC=TC-008, Remarks/SpecialAttention=No remarks8,   DisabilityifAn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadl, TC=TC-012, Remarks/SpecialAttention=No remarks12,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadl, TC=TC-012, Remarks/SpecialAttention=No remarks12,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =, TC=TC-029, Remarks/SpecialAttention=No remarks28,   DisabilityifAny=Visual, Oc...)">f({PlaceofOccupation =, TC=TC-029, Remarks/SpecialAttention=No remarks28,   DisabilityifAny=Visual, Oc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =hyderabad, TC=TC-031, Remarks/SpecialAttention=No remarks30,   DisabilityifAny=O...)">f({PlaceofOccupation =hyderabad, TC=TC-031, Remarks/SpecialAttention=No remarks30,   DisabilityifAny=O...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadf, TC=TC-006, Remarks/SpecialAttention=No remarks6,   DisabilityifAn...)">f({PlaceofOccupation =Secunderabadf, TC=TC-006, Remarks/SpecialAttention=No remarks6,   DisabilityifAn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadz, TC=TC-030, Remarks/SpecialAttention=No remarks29,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadz, TC=TC-030, Remarks/SpecialAttention=No remarks29,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =hyderguda, TC=TC-032, Remarks/SpecialAttention=No remarks31,   DisabilityifAny=P...)">f({PlaceofOccupation =hyderguda, TC=TC-032, Remarks/SpecialAttention=No remarks31,   DisabilityifAny=P...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =12345, TC=TC-026, Remarks/SpecialAttention=No remarks25,   DisabilityifAny=Physi...)">f({PlaceofOccupation =12345, TC=TC-026, Remarks/SpecialAttention=No remarks25,   DisabilityifAny=Physi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =rajesh123, TC=TC-028, Remarks/SpecialAttention=No remarks27,   DisabilityifAny=H...)">f({PlaceofOccupation =rajesh123, TC=TC-028, Remarks/SpecialAttention=No remarks27,   DisabilityifAny=H...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadg, TC=TC-007, Remarks/SpecialAttention=No remarks7,   DisabilityifAn...)">f({PlaceofOccupation =Secunderabadg, TC=TC-007, Remarks/SpecialAttention=No remarks7,   DisabilityifAn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabady, TC=TC-025, Remarks/SpecialAttention=No remarks24,   DisabilityifA...)">f({PlaceofOccupation =Secunderabady, TC=TC-025, Remarks/SpecialAttention=No remarks24,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =hyder, TC=TC-033, Remarks/SpecialAttention=No remarks32,   DisabilityifAny=Heari...)">f({PlaceofOccupation =hyder, TC=TC-033, Remarks/SpecialAttention=No remarks32,   DisabilityifAny=Heari...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadj, TC=TC-010, Remarks/SpecialAttention=No remarks10,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadj, TC=TC-010, Remarks/SpecialAttention=No remarks10,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadv, TC=TC-022, Remarks/SpecialAttention=No remarks21,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadv, TC=TC-022, Remarks/SpecialAttention=No remarks21,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadp, TC=TC-016, Remarks/SpecialAttention=123214365476578000,   Disabil...)">f({PlaceofOccupation =Secunderabadp, TC=TC-016, Remarks/SpecialAttention=123214365476578000,   Disabil...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabads, TC=TC-019, Remarks/SpecialAttention=No remarks18,   DisabilityifA...)">f({PlaceofOccupation =Secunderabads, TC=TC-019, Remarks/SpecialAttention=No remarks18,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabado, TC=TC-015, Remarks/SpecialAttention=#$@$#@%#^%#%,   DisabilityifA...)">f({PlaceofOccupation =Secunderabado, TC=TC-015, Remarks/SpecialAttention=#$@$#@%#^%#%,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadi, TC=TC-009, Remarks/SpecialAttention=No remarks9,   DisabilityifAn...)">f({PlaceofOccupation =Secunderabadi, TC=TC-009, Remarks/SpecialAttention=No remarks9,   DisabilityifAn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadn, TC=TC-014, Remarks/SpecialAttention=,   DisabilityifAny=Mental, O...)">f({PlaceofOccupation =Secunderabadn, TC=TC-014, Remarks/SpecialAttention=,   DisabilityifAny=Mental, O...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadq, TC=TC-017, Remarks/SpecialAttention=No remarks16,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadq, TC=TC-017, Remarks/SpecialAttention=No remarks16,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadc, TC=TC-003, Remarks/SpecialAttention=No remarks3,   DisabilityifAn...)">f({PlaceofOccupation =Secunderabadc, TC=TC-003, Remarks/SpecialAttention=No remarks3,   DisabilityifAn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadb, TC=TC-002, Remarks/SpecialAttention=No remarks2,   DisabilityifAn...)">f({PlaceofOccupation =Secunderabadb, TC=TC-002, Remarks/SpecialAttention=No remarks2,   DisabilityifAn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadk, TC=TC-011, Remarks/SpecialAttention=No remarks11,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadk, TC=TC-011, Remarks/SpecialAttention=No remarks11,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadw, TC=TC-023, Remarks/SpecialAttention=No remarks22,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadw, TC=TC-023, Remarks/SpecialAttention=No remarks22,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cgg.testcases.EliminationpovertyTestcase" hash-for-method="f({PlaceofOccupation =Secunderabadm, TC=TC-013, Remarks/SpecialAttention=No remarks13,   DisabilityifA...)">f({PlaceofOccupation =Secunderabadm, TC=TC-013, Remarks/SpecialAttention=No remarks13,   DisabilityifA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cgg.testcases.EliminationpovertyTestcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabada, TC=TC-001, Remarks/SpecialAttention=No remarks1,   DisabilityifAn...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabada, TC=TC-001, Remarks/SpecialAttention=No remarks1,   DisabilityifAn...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabada, TC=TC-001, Remarks/SpecialAttention=No remarks1,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=P, NameOfTheFather=kittu, MarriedStatus=Married, Runmode=Y, IdProofNo=123456789012, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=Cgg, PeriodOfHomeles=One Day, Caste=OC, Education Qualification=Primary School, Photo upload=C:\\Users\\Brahmakumar\\Downloads\\ghmcbug2.png, Age=18, Reasons for Homelessness=UnEmployed (job Search), HealthStatus=Normal})</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cgg.pages.TestBase.takeScreenshot(TestBase.java:440)
+	at com.cgg.pages.TestBase.reportFail(TestBase.java:457)
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cgg.testcases.EliminationpovertyTestcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadu, TC=TC-021, Remarks/SpecialAttention=No remarks20,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadu, TC=TC-021, Remarks/SpecialAttention=No remarks20,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadu, TC=TC-021, Remarks/SpecialAttention=No remarks20,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=rasheed, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789029, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=mohan, PeriodOfHomeles=2 to 7 Days, Caste=ST, Education Qualification=Primary School, Photo upload=, Age=, Reasons for Homelessness=Destitute, HealthStatus=Open Wounds})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadx, TC=TC-024, Remarks/SpecialAttention=No remarks23,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadx, TC=TC-024, Remarks/SpecialAttention=No remarks23,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadx, TC=TC-024, Remarks/SpecialAttention=No remarks23,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=deepak, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789032, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=deepu, PeriodOfHomeles=3 to 6 Months, Caste=, Education Qualification=Primary School, Photo upload=, Age=39, Reasons for Homelessness=Others, HealthStatus=GeneralSick})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadt, TC=TC-020, Remarks/SpecialAttention=No remarks19,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadt, TC=TC-020, Remarks/SpecialAttention=No remarks19,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadt, TC=TC-020, Remarks/SpecialAttention=No remarks19,   DisabilityifAny=Others, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=kittu17, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789028, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=rasheed, PeriodOfHomeles=One Day, Caste=SC, Education Qualification=Matriculate, Photo upload=, Age=37, Reasons for Homelessness=Recovering patient, HealthStatus=Illness})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =!@#$%^&amp;*()_+-={}[]|\:&quot;;&#039;,./&lt;&gt;?, TC=TC-027, Remarks/SpecialAttention=No remarks26...)">
+                  </a> <!-- f({PlaceofOccupation =!@#$%^&*()_+-={}[]|\:";',./<>?, TC=TC-027, Remarks/SpecialAttention=No remarks26...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =!@#$%^&*()_+-={}[]|\:";',./<>?, TC=TC-027, Remarks/SpecialAttention=No remarks26,   DisabilityifAny=Physical, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=rao, MarriedStatus=Married, Runmode=N, IdProofNo=123456789035, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=venkat, PeriodOfHomeles=One Day, Caste=BC, Education Qualification=Primary School, Photo upload=, Age=42, Reasons for Homelessness=Health Issues, HealthStatus=Illness})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadd, TC=TC-004, Remarks/SpecialAttention=No remarks4,   DisabilityifAn...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadd, TC=TC-004, Remarks/SpecialAttention=No remarks4,   DisabilityifAn...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadd, TC=TC-004, Remarks/SpecialAttention=No remarks4,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=chinni, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789015, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=rajesh123, PeriodOfHomeles=1 to 3 Months, Caste=BC, Education Qualification=Primary School, Photo upload=, Age=21, Reasons for Homelessness=Recovering patient, HealthStatus=TB})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabade, TC=TC-005, Remarks/SpecialAttention=No remarks5,   DisabilityifAn...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabade, TC=TC-005, Remarks/SpecialAttention=No remarks5,   DisabilityifAn...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabade, TC=TC-005, Remarks/SpecialAttention=No remarks5,   DisabilityifAny=Others, Occupation=Others, DataFlag=N, NameOfTheFather=ammu, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789016, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=, PeriodOfHomeles=3 to 6 Months, Caste=Minority, Education Qualification=Middle School, Photo upload=, Age=22, Reasons for Homelessness=Destitute, HealthStatus=Hiv +Ve})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadr, TC=TC-018, Remarks/SpecialAttention=No remarks17,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadr, TC=TC-018, Remarks/SpecialAttention=No remarks17,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadr, TC=TC-018, Remarks/SpecialAttention=No remarks17,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=!@#$%^&*()?, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789026, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=harish, PeriodOfHomeles=6 Months to 1 Year, Caste=Others, Education Qualification=Primary School, Photo upload=, Age=33, Reasons for Homelessness=Family Disputes, HealthStatus=Chronic Sick})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadh, TC=TC-008, Remarks/SpecialAttention=No remarks8,   DisabilityifAn...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadh, TC=TC-008, Remarks/SpecialAttention=No remarks8,   DisabilityifAn...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadh, TC=TC-008, Remarks/SpecialAttention=No remarks8,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=suri, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789019, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=chinni, PeriodOfHomeles=One Day, Caste=SC, Education Qualification=Middle School, Photo upload=, Age=25, Reasons for Homelessness=Others, HealthStatus=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadl, TC=TC-012, Remarks/SpecialAttention=No remarks12,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadl, TC=TC-012, Remarks/SpecialAttention=No remarks12,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadl, TC=TC-012, Remarks/SpecialAttention=No remarks12,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=giri, MarriedStatus=Unmarried, Runmode=N, IdProofNo=#$@$#@%#^%#%, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=suri, PeriodOfHomeles=8 Days to  1 Month, Caste=Others, Education Qualification=Primary School, Photo upload=, Age=29, Reasons for Homelessness=Recovering patient, HealthStatus=Normal})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =, TC=TC-029, Remarks/SpecialAttention=No remarks28,   DisabilityifAny=Visual, Oc...)">
+                  </a> <!-- f({PlaceofOccupation =, TC=TC-029, Remarks/SpecialAttention=No remarks28,   DisabilityifAny=Visual, Oc...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =, TC=TC-029, Remarks/SpecialAttention=No remarks28,   DisabilityifAny=Visual, Occupation=Self Employed, DataFlag=N, NameOfTheFather=rama, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=krishna, PeriodOfHomeles=8 Days to  1 Month, Caste=Others, Education Qualification=Matriculate, Photo upload=, Age=44, Reasons for Homelessness=Debts, HealthStatus=TB})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =hyderabad, TC=TC-031, Remarks/SpecialAttention=No remarks30,   DisabilityifAny=O...)">
+                  </a> <!-- f({PlaceofOccupation =hyderabad, TC=TC-031, Remarks/SpecialAttention=No remarks30,   DisabilityifAny=O...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =hyderabad, TC=TC-031, Remarks/SpecialAttention=No remarks30,   DisabilityifAny=Others, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=siva, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=venkat, PeriodOfHomeles=One Day, Caste=ST, Education Qualification=Primary School, Photo upload=, Age=42, Reasons for Homelessness=, HealthStatus=Illness})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadf, TC=TC-006, Remarks/SpecialAttention=No remarks6,   DisabilityifAn...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadf, TC=TC-006, Remarks/SpecialAttention=No remarks6,   DisabilityifAn...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadf, TC=TC-006, Remarks/SpecialAttention=No remarks6,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=raj, MarriedStatus=Married, Runmode=N, IdProofNo=123456789017, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=rajesh, PeriodOfHomeles=6 Months to 1 Year, Caste=Others, Education Qualification=, Photo upload=, Age=23, Reasons for Homelessness=Debts, HealthStatus=GeneralSick})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadz, TC=TC-030, Remarks/SpecialAttention=No remarks29,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadz, TC=TC-030, Remarks/SpecialAttention=No remarks29,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadz, TC=TC-030, Remarks/SpecialAttention=No remarks29,   DisabilityifAny=, Occupation=No Occupation, DataFlag=N, NameOfTheFather=krishna, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=siva, PeriodOfHomeles=More Than 1 Year, Caste=SC, Education Qualification=Matriculate, Photo upload=, Age=41, Reasons for Homelessness=patient attendant, HealthStatus=Normal})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =hyderguda, TC=TC-032, Remarks/SpecialAttention=No remarks31,   DisabilityifAny=P...)">
+                  </a> <!-- f({PlaceofOccupation =hyderguda, TC=TC-032, Remarks/SpecialAttention=No remarks31,   DisabilityifAny=P...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =hyderguda, TC=TC-032, Remarks/SpecialAttention=No remarks31,   DisabilityifAny=Physical, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=rama, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =, NameOfTheHomeless=rama, PeriodOfHomeles=2 to 7 Days, Caste=BC, Education Qualification=Middle School, Photo upload=, Age=43, Reasons for Homelessness=Health Issues, HealthStatus=Open Wounds})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =12345, TC=TC-026, Remarks/SpecialAttention=No remarks25,   DisabilityifAny=Physi...)">
+                  </a> <!-- f({PlaceofOccupation =12345, TC=TC-026, Remarks/SpecialAttention=No remarks25,   DisabilityifAny=Physi...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =12345, TC=TC-026, Remarks/SpecialAttention=No remarks25,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=mani, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789034, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=rao, PeriodOfHomeles=More Than 1 Year, Caste=ST, Education Qualification=Matriculate, Photo upload=, Age=41, Reasons for Homelessness=patient attendant, HealthStatus=Normal})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =rajesh123, TC=TC-028, Remarks/SpecialAttention=No remarks27,   DisabilityifAny=H...)">
+                  </a> <!-- f({PlaceofOccupation =rajesh123, TC=TC-028, Remarks/SpecialAttention=No remarks27,   DisabilityifAny=H...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =rajesh123, TC=TC-028, Remarks/SpecialAttention=No remarks27,   DisabilityifAny=Hearing, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=venkat, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789036, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=rama, PeriodOfHomeles=2 to 7 Days, Caste=Minority, Education Qualification=Middle School, Photo upload=, Age=43, Reasons for Homelessness=Recovering patient, HealthStatus=Open Wounds})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadg, TC=TC-007, Remarks/SpecialAttention=No remarks7,   DisabilityifAn...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadg, TC=TC-007, Remarks/SpecialAttention=No remarks7,   DisabilityifAn...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadg, TC=TC-007, Remarks/SpecialAttention=No remarks7,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=raju, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789018, LocationofpresentStay=, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=suresh, PeriodOfHomeles=More Than 1 Year, Caste=OC, Education Qualification=Primary School, Photo upload=, Age=24, Reasons for Homelessness=patient attendant, HealthStatus=Chronic Sick})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabady, TC=TC-025, Remarks/SpecialAttention=No remarks24,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabady, TC=TC-025, Remarks/SpecialAttention=No remarks24,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabady, TC=TC-025, Remarks/SpecialAttention=No remarks24,   DisabilityifAny=Hearing, Occupation=, DataFlag=N, NameOfTheFather=deepu, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789033, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=mani, PeriodOfHomeles=6 Months to 1 Year, Caste=SC, Education Qualification=Middle School, Photo upload=, Age=40, Reasons for Homelessness=UnEmployed (job Search), HealthStatus=Chronic Sick})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =hyder, TC=TC-033, Remarks/SpecialAttention=No remarks32,   DisabilityifAny=Heari...)">
+                  </a> <!-- f({PlaceofOccupation =hyder, TC=TC-033, Remarks/SpecialAttention=No remarks32,   DisabilityifAny=Heari...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =hyder, TC=TC-033, Remarks/SpecialAttention=No remarks32,   DisabilityifAny=Hearing, Occupation=Self Employed, DataFlag=N, NameOfTheFather=krishna, MarriedStatus=Married, Runmode=N, IdProofNo=123456789037, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=krishna, PeriodOfHomeles=8 Days to  1 Month, Caste=Minority, Education Qualification=Matriculate, Photo upload=, Age=44, Reasons for Homelessness=patient attendant, HealthStatus=TB})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadj, TC=TC-010, Remarks/SpecialAttention=No remarks10,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadj, TC=TC-010, Remarks/SpecialAttention=No remarks10,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadj, TC=TC-010, Remarks/SpecialAttention=No remarks10,   DisabilityifAny=Others, Occupation=Others, DataFlag=N, NameOfTheFather=govind, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789021, LocationofpresentStay=Temples/Holy Places, IdentityProof=, Stay =Temporary, NameOfTheHomeless=raj, PeriodOfHomeles=One Day, Caste=BC, Education Qualification=Primary School, Photo upload=, Age=27, Reasons for Homelessness=Family Disputes, HealthStatus=Illness})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadv, TC=TC-022, Remarks/SpecialAttention=No remarks21,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadv, TC=TC-022, Remarks/SpecialAttention=No remarks21,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadv, TC=TC-022, Remarks/SpecialAttention=No remarks21,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=mohan, MarriedStatus=Married, Runmode=N, IdProofNo=123456789030, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=ganesh, PeriodOfHomeles=8 Days to  1 Month, Caste=SC, Education Qualification=Middle School, Photo upload=, Age=10.0, Reasons for Homelessness=Debts, HealthStatus=TB})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadp, TC=TC-016, Remarks/SpecialAttention=123214365476578000,   Disabil...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadp, TC=TC-016, Remarks/SpecialAttention=123214365476578000,   Disabil...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadp, TC=TC-016, Remarks/SpecialAttention=123214365476578000,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=govind, MarriedStatus=Married, Runmode=N, IdProofNo=123456789024, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=giri, PeriodOfHomeles=1 to 3 Months, Caste=BC, Education Qualification=Middle School, Photo upload=, Age=34, Reasons for Homelessness=Others, HealthStatus=Hiv +Ve})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabads, TC=TC-019, Remarks/SpecialAttention=No remarks18,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabads, TC=TC-019, Remarks/SpecialAttention=No remarks18,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabads, TC=TC-019, Remarks/SpecialAttention=No remarks18,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=2.4435436546E10, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789027, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=harshith, PeriodOfHomeles=More Than 1 Year, Caste=ST, Education Qualification=Middle School, Photo upload=, Age=36, Reasons for Homelessness=Health Issues, HealthStatus=Normal})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabado, TC=TC-015, Remarks/SpecialAttention=#$@$#@%#^%#%,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabado, TC=TC-015, Remarks/SpecialAttention=#$@$#@%#^%#%,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabado, TC=TC-015, Remarks/SpecialAttention=#$@$#@%#^%#%,   DisabilityifAny=Others, Occupation=Others, DataFlag=N, NameOfTheFather=naresh, MarriedStatus=Single women, Runmode=N, IdProofNo=123456789023, LocationofpresentStay=Temples/Holy Places, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=govinda, PeriodOfHomeles=8 Days to  1 Month, Caste=ST, Education Qualification=Primary School, Photo upload=, Age=32, Reasons for Homelessness=patient attendant, HealthStatus=TB})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadi, TC=TC-009, Remarks/SpecialAttention=No remarks9,   DisabilityifAn...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadi, TC=TC-009, Remarks/SpecialAttention=No remarks9,   DisabilityifAn...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadi, TC=TC-009, Remarks/SpecialAttention=No remarks9,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=naresh, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789020, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=ammu, PeriodOfHomeles=, Caste=ST, Education Qualification=Matriculate, Photo upload=, Age=26, Reasons for Homelessness=UnEmployed (job Search), HealthStatus=Normal})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadn, TC=TC-014, Remarks/SpecialAttention=,   DisabilityifAny=Mental, O...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadn, TC=TC-014, Remarks/SpecialAttention=,   DisabilityifAny=Mental, O...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadn, TC=TC-014, Remarks/SpecialAttention=,   DisabilityifAny=Mental, Occupation=Self Employed, DataFlag=N, NameOfTheFather=suri, MarriedStatus=Divorce, Runmode=N, IdProofNo=123456789022, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=govind, PeriodOfHomeles=2 to 7 Days, Caste=SC, Education Qualification=Matriculate, Photo upload=, Age=31, Reasons for Homelessness=Debts, HealthStatus=Open Wounds})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadq, TC=TC-017, Remarks/SpecialAttention=No remarks16,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadq, TC=TC-017, Remarks/SpecialAttention=No remarks16,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadq, TC=TC-017, Remarks/SpecialAttention=No remarks16,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789025, LocationofpresentStay=FootPath, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=hari, PeriodOfHomeles=3 to 6 Months, Caste=Minority, Education Qualification=Matriculate, Photo upload=, Age=35, Reasons for Homelessness=UnEmployed (job Search), HealthStatus=GeneralSick})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadc, TC=TC-003, Remarks/SpecialAttention=No remarks3,   DisabilityifAn...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadc, TC=TC-003, Remarks/SpecialAttention=No remarks3,   DisabilityifAn...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadc, TC=TC-003, Remarks/SpecialAttention=No remarks3,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=suresh, MarriedStatus=Widow, Runmode=N, IdProofNo=123456789014, LocationofpresentStay=RailWay Station, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=!@#$%^&*()_+-={}[]|\:";',./<>?, PeriodOfHomeles=8 Days to  1 Month, Caste=ST, Education Qualification=Matriculate, Photo upload=, Age=20, Reasons for Homelessness=Health Issues, HealthStatus=Open Wounds})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadb, TC=TC-002, Remarks/SpecialAttention=No remarks2,   DisabilityifAn...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadb, TC=TC-002, Remarks/SpecialAttention=No remarks2,   DisabilityifAn...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadb, TC=TC-002, Remarks/SpecialAttention=No remarks2,   DisabilityifAny=Hearing, Occupation=Monthly Salaried, DataFlag=N, NameOfTheFather=rajesh, MarriedStatus=Unmarried, Runmode=N, IdProofNo=123456789013, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Temporary, NameOfTheHomeless=12345, PeriodOfHomeles=2 to 7 Days, Caste=SC, Education Qualification=Middle School, Photo upload=, Age=19, Reasons for Homelessness=Family Disputes, HealthStatus=Illness})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadk, TC=TC-011, Remarks/SpecialAttention=No remarks11,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadk, TC=TC-011, Remarks/SpecialAttention=No remarks11,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadk, TC=TC-011, Remarks/SpecialAttention=No remarks11,   DisabilityifAny=Physical, Occupation=No Occupation, DataFlag=N, NameOfTheFather=govinda, MarriedStatus=Married, Runmode=N, IdProofNo=, LocationofpresentStay=Others, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=raju, PeriodOfHomeles=2 to 7 Days, Caste=Minority, Education Qualification=Middle School, Photo upload=, Age=28, Reasons for Homelessness=Health Issues, HealthStatus=Open Wounds})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadw, TC=TC-023, Remarks/SpecialAttention=No remarks22,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadw, TC=TC-023, Remarks/SpecialAttention=No remarks22,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadw, TC=TC-023, Remarks/SpecialAttention=No remarks22,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=ganesh, MarriedStatus=, Runmode=N, IdProofNo=123456789031, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=deepak, PeriodOfHomeles=1 to 3 Months, Caste=Minority, Education Qualification=Matriculate, Photo upload=, Age=38, Reasons for Homelessness=patient attendant, HealthStatus=Hiv +Ve})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({PlaceofOccupation =Secunderabadm, TC=TC-013, Remarks/SpecialAttention=No remarks13,   DisabilityifA...)">
+                  </a> <!-- f({PlaceofOccupation =Secunderabadm, TC=TC-013, Remarks/SpecialAttention=No remarks13,   DisabilityifA...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({PlaceofOccupation =Secunderabadm, TC=TC-013, Remarks/SpecialAttention=No remarks13,   DisabilityifAny=Visual, Occupation=Wage Employed, DataFlag=N, NameOfTheFather=hari, MarriedStatus=Widow, Runmode=N, IdProofNo=sadssdsdfgghgh, LocationofpresentStay=Bus Stand, IdentityProof=Adhar Card, Stay =Permanent, NameOfTheHomeless=naresh, PeriodOfHomeles=One Day, Caste=OC, Education Qualification=Middle School, Photo upload=, Age=30, Reasons for Homelessness=Destitute, HealthStatus=Illness})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Test Case Number
+	at com.cgg.testcases.EliminationpovertyTestcase.f(EliminationpovertyTestcase.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-skipped -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Brahmakumar\AppData\Local\Temp\testng-eclipse-2010079612\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cgg.testcases.EliminationpovertyTestcase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+  &lt;test name=&quot;Default test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cgg.testcases.EliminationpovertyTestcase&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;beforetest&quot;/&gt;
+          &lt;include name=&quot;f&quot; invocation-numbers=&quot;0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32&quot;/&gt;
+          &lt;include name=&quot;closeBrowser&quot;/&gt;
+          &lt;include name=&quot;Aftertest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.cgg.testcases.EliminationpovertyTestcase --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Default test(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(33);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'f')
+data.setCell(0, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(0, 3, 34787);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'f')
+data.setCell(1, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(1, 3, 28);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'f')
+data.setCell(2, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(2, 3, 25);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'f')
+data.setCell(3, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(3, 3, 21);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'f')
+data.setCell(4, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(4, 3, 3);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'f')
+data.setCell(5, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(5, 3, 3);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'f')
+data.setCell(6, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(6, 3, 3);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'f')
+data.setCell(7, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'f')
+data.setCell(8, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'f')
+data.setCell(9, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'f')
+data.setCell(10, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'f')
+data.setCell(11, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'f')
+data.setCell(12, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'f')
+data.setCell(13, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'f')
+data.setCell(14, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'f')
+data.setCell(15, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'f')
+data.setCell(16, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'f')
+data.setCell(17, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'f')
+data.setCell(18, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'f')
+data.setCell(19, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'f')
+data.setCell(20, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'f')
+data.setCell(21, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'f')
+data.setCell(22, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'f')
+data.setCell(23, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(23, 3, 1);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'f')
+data.setCell(24, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'f')
+data.setCell(25, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'f')
+data.setCell(26, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'f')
+data.setCell(27, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'f')
+data.setCell(28, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'f')
+data.setCell(29, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'f')
+data.setCell(30, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'f')
+data.setCell(31, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'f')
+data.setCell(32, 2, 'com.cgg.testcases.EliminationpovertyTestcase')
+data.setCell(32, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cgg.testcases.EliminationpovertyTestcase</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforetest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">f({PlaceofOccupation =Secunderabada, TC=TC-001, Remarks/SpecialAttention=No remarks1,   DisabilityifAn...)</span>
+                <span class="method-start">7106 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41895 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadb, TC=TC-002, Remarks/SpecialAttention=No remarks2,   DisabilityifAn...)</span>
+                <span class="method-start">41896 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41898 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadc, TC=TC-003, Remarks/SpecialAttention=No remarks3,   DisabilityifAn...)</span>
+                <span class="method-start">41898 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41901 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadd, TC=TC-004, Remarks/SpecialAttention=No remarks4,   DisabilityifAn...)</span>
+                <span class="method-start">41901 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41908 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabade, TC=TC-005, Remarks/SpecialAttention=No remarks5,   DisabilityifAn...)</span>
+                <span class="method-start">41908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41910 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadf, TC=TC-006, Remarks/SpecialAttention=No remarks6,   DisabilityifAn...)</span>
+                <span class="method-start">41910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41914 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadg, TC=TC-007, Remarks/SpecialAttention=No remarks7,   DisabilityifAn...)</span>
+                <span class="method-start">41914 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41922 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadh, TC=TC-008, Remarks/SpecialAttention=No remarks8,   DisabilityifAn...)</span>
+                <span class="method-start">41922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41925 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadi, TC=TC-009, Remarks/SpecialAttention=No remarks9,   DisabilityifAn...)</span>
+                <span class="method-start">41925 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41927 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadj, TC=TC-010, Remarks/SpecialAttention=No remarks10,   DisabilityifA...)</span>
+                <span class="method-start">41927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41929 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadk, TC=TC-011, Remarks/SpecialAttention=No remarks11,   DisabilityifA...)</span>
+                <span class="method-start">41929 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41930 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadl, TC=TC-012, Remarks/SpecialAttention=No remarks12,   DisabilityifA...)</span>
+                <span class="method-start">41931 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41932 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadm, TC=TC-013, Remarks/SpecialAttention=No remarks13,   DisabilityifA...)</span>
+                <span class="method-start">41932 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41939 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadn, TC=TC-014, Remarks/SpecialAttention=,   DisabilityifAny=Mental, O...)</span>
+                <span class="method-start">41940 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41943 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabado, TC=TC-015, Remarks/SpecialAttention=#$@$#@%#^%#%,   DisabilityifA...)</span>
+                <span class="method-start">41943 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41945 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadp, TC=TC-016, Remarks/SpecialAttention=123214365476578000,   Disabil...)</span>
+                <span class="method-start">41945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41946 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadq, TC=TC-017, Remarks/SpecialAttention=No remarks16,   DisabilityifA...)</span>
+                <span class="method-start">41947 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41948 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadr, TC=TC-018, Remarks/SpecialAttention=No remarks17,   DisabilityifA...)</span>
+                <span class="method-start">41948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41949 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabads, TC=TC-019, Remarks/SpecialAttention=No remarks18,   DisabilityifA...)</span>
+                <span class="method-start">41949 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41950 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadt, TC=TC-020, Remarks/SpecialAttention=No remarks19,   DisabilityifA...)</span>
+                <span class="method-start">41950 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadu, TC=TC-021, Remarks/SpecialAttention=No remarks20,   DisabilityifA...)</span>
+                <span class="method-start">41951 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadv, TC=TC-022, Remarks/SpecialAttention=No remarks21,   DisabilityifA...)</span>
+                <span class="method-start">41980 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41982 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadw, TC=TC-023, Remarks/SpecialAttention=No remarks22,   DisabilityifA...)</span>
+                <span class="method-start">41983 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41984 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadx, TC=TC-024, Remarks/SpecialAttention=No remarks23,   DisabilityifA...)</span>
+                <span class="method-start">41984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">41985 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabady, TC=TC-025, Remarks/SpecialAttention=No remarks24,   DisabilityifA...)</span>
+                <span class="method-start">41985 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">42007 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =12345, TC=TC-026, Remarks/SpecialAttention=No remarks25,   DisabilityifAny=Physi...)</span>
+                <span class="method-start">42007 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">42008 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =!@#$%^&*()_+-={}[]|\:";',./<>?, TC=TC-027, Remarks/SpecialAttention=No remarks26...)</span>
+                <span class="method-start">42008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">42009 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =rajesh123, TC=TC-028, Remarks/SpecialAttention=No remarks27,   DisabilityifAny=H...)</span>
+                <span class="method-start">42009 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">42010 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =, TC=TC-029, Remarks/SpecialAttention=No remarks28,   DisabilityifAny=Visual, Oc...)</span>
+                <span class="method-start">42010 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">42030 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =Secunderabadz, TC=TC-030, Remarks/SpecialAttention=No remarks29,   DisabilityifA...)</span>
+                <span class="method-start">42031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">42032 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =hyderabad, TC=TC-031, Remarks/SpecialAttention=No remarks30,   DisabilityifAny=O...)</span>
+                <span class="method-start">42032 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">42033 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =hyderguda, TC=TC-032, Remarks/SpecialAttention=No remarks31,   DisabilityifAny=P...)</span>
+                <span class="method-start">42033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">42034 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">f({PlaceofOccupation =hyder, TC=TC-033, Remarks/SpecialAttention=No remarks32,   DisabilityifAny=Heari...)</span>
+                <span class="method-start">42034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftertest</span>
+                <span class="method-start">42059 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">42115 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

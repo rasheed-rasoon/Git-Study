@@ -1,0 +1,24 @@
+package rough;
+
+public class StudentData {
+	
+	int age;
+	String name;
+	int id;
+	
+	public StudentData(int age,String name,int id)
+	{
+		this.age=age;
+		this.name=name;
+		this.id=id;
+	}
+}
+
+class DataSample
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

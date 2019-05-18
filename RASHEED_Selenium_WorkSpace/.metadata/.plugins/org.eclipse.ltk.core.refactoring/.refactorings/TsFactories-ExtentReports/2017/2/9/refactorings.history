@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;JdbcConnection.java&apos; to &apos;JavaToipicWisePrograms/src/programsOnStrings&apos;&#x0D;&#x0A;- Original project: &apos;TsFactories-ExtentReports&apos;&#x0D;&#x0A;- Destination element: &apos;JavaToipicWisePrograms/src/programsOnStrings&apos;&#x0D;&#x0A;- Original element: &apos;rough.JdbcConnection.java&apos;" description="Copy compilation unit" destination="=JavaToipicWisePrograms/src&lt;programsOnStrings" element1="/src\/test\/java&lt;rough{JdbcConnection.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1488186267492" units="1" version="1.0"/>
+</session>

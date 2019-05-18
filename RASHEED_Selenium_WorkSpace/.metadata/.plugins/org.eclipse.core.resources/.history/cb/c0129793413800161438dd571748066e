@@ -1,0 +1,146 @@
+package com.org.Maven_Practice;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+
+import jxl.Sheet;
+import jxl.Workbook;
+
+public class APLARRInputsHelper  {
+
+	public WebDriver driver;
+
+	// ***************DATE FORMAT***************
+	DateFormat df = new SimpleDateFormat("yyyy_MMM_dd hh_mm_ss a");
+	Date d = new Date();
+	String time = df.format(d);
+
+	 //***************SCREENSHOT*********************
+	 public void takeScreenShot(String str) {
+	 File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	 //FileUtils.copyFile(f, ".\\Screenshot\\" + str + "_" + time + ".png");
+	 }
+
+	public void verifyMouseHover(String linktext) {
+		Actions a = new Actions(driver);
+		a.moveToElement(driver.findElement(By.xpath(linktext))).build().perform();
+	}
+
+	public void dataDrivenAPLARRInputs() throws Exception {
+		FileInputStream fis = new FileInputStream("F:\\RASHEED_Selenium_WorkSpace\\Maven_Practice\\testData.xls");
+		Workbook wb = Workbook.getWorkbook(fis);
+		Sheet s = wb.getSheet("APLARRInputs");
+		String str = "";
+
+		for (int c = 3; c < s.getColumns(); c++) 
+		{
+			for (int i = 1; i < s.getRows(); i++) 
+			{
+				try {
+					if (s.getCell(2, i).getContents().equalsIgnoreCase("url")) 
+					{
+						driver.get(s.getCell(0, i).getContents());
+					} 
+					else if (s.getCell(2, i).getContents().equalsIgnoreCase("dropdown")) 
+					{
+						new Select(driver.findElement(By.xpath(s.getCell(0, i).getContents()))).selectByVisibleText(s.getCell(c, i).getContents());
+					} 
+					else if (s.getCell(2, i).getContents().equalsIgnoreCase("textbox")) 
+					{
+						// driver.manage().timeouts().implicitlyWait(05,
+						// TimeUnit.SECONDS);
+						//driver.findElement(By.name(s.getCell(0, i).getContents())).clear();
+						driver.findElement(By.name(s.getCell(0, i).getContents())).sendKeys(s.getCell(c, i).getContents());
+					} 
+					else if(s.getCell(2,i).getContents().equalsIgnoreCase("textarea"))
+					{
+						driver.findElement(By.name(s.getCell(0, i).getContents())).sendKeys(s.getCell(c,i).getContents());
+					}
+					else if (s.getCell(2, i).getContents().equalsIgnoreCase("button")
+							|| s.getCell(2, i).getContents().equalsIgnoreCase("radiobutton")
+							|| s.getCell(2, i).getContents().equalsIgnoreCase("checkbox")
+							|| s.getCell(2, i).getContents().equalsIgnoreCase("image")) 
+					{
+						driver.findElement(By.xpath(s.getCell(0, i).getContents())).click();
+						//System.out.println("Login button Clicked");
+					} 
+					else if (s.getCell(2, i).getContents().equalsIgnoreCase("alert")) 
+					{
+						if (s.getCell(c, i).getContents().equalsIgnoreCase("ok")) 
+						{
+							driver.switchTo().alert().accept();
+							System.out.println("clicked on OK");
+							
+						} 
+						else 
+						{
+							driver.switchTo().alert().dismiss();
+							System.out.println("clicked on CANCEL");
+						}
+					} 
+					else if (s.getCell(2, i).getContents().equalsIgnoreCase("link")) 
+					{
+						driver.findElement(By.xpath(s.getCell(0, i).getContents())).click();
+
+						// PageHandling();
+						// driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("mousehover")) 
+					{
+						verifyMouseHover(s.getCell(0, i).getContents());
+					} 
+					else if (s.getCell(2, i).getContents().equalsIgnoreCase("wait")) 
+					{
+						Thread.sleep(5000);
+					}
+					str = "Pass";
+				} 
+				catch (Exception e) 
+				{
+					str = "Fail";
+				}
+			}
+			System.out.println(str);
+		}
+	}	
+
+	@BeforeTest
+	public void beforeTest() throws Exception {
+//		driver = new FirefoxDriver();
+//		driver.manage().window().maximize();
+		String exePath = "F:\\softwares\\Drivers\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", exePath);
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+
+		//driver.get("http://toolsqa.com/automation-practice-form/");
+	  driver.get("http://test.cgg.gov.in/tsfactories/home.do");
+	  Thread.sleep(4000);
+
+		/*
+		 * driver.get("http://test.cgg.gov.in:8080/APLCQ/"); Thread.sleep(2000);
+		 */
+	}
+
+	@AfterTest
+	public void afterTest() {
+		//driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
+		driver.quit();
+	}
+
+}
+

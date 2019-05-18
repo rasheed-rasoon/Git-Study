@@ -1,0 +1,20 @@
+package rough;
+
+public class DesiredCapabilities {
+	
+	public static void firefoxDriver()
+	{
+	System.setProperty(, value)	
+		
+		
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

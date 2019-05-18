@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="suite" duration-ms="9057" started-at="2016-05-13T06:34:31Z" finished-at="2016-05-13T06:34:40Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="9057" started-at="2016-05-13T06:34:31Z" finished-at="2016-05-13T06:34:40Z">
+      <class name="Java_Pac.Broken_Links">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Java_Pac.Broken_Links@2b80d80f]" name="beforeTest" is-config="true" duration-ms="8775" started-at="2016-05-13T12:04:31Z" finished-at="2016-05-13T12:04:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="findBrokenLinksExample()[pri:0, instance:Java_Pac.Broken_Links@2b80d80f]" name="findBrokenLinksExample" duration-ms="202" started-at="2016-05-13T12:04:40Z" finished-at="2016-05-13T12:04:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findBrokenLinksExample -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Java_Pac.Broken_Links@2b80d80f]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-05-13T12:04:40Z" finished-at="2016-05-13T12:04:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Java_Pac.Broken_Links -->
+    </test> <!-- test -->
+  </suite> <!-- suite -->
+</testng-results>

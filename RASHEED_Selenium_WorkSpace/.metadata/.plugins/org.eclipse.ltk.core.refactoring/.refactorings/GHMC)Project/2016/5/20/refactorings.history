@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CLick_Know_No_Of_Links_Sample.java&apos; to &apos;Java/src/Java_Pac&apos;&#x0D;&#x0A;- Original project: &apos;GHMC)Project&apos;&#x0D;&#x0A;- Destination element: &apos;Java/src/Java_Pac&apos;&#x0D;&#x0A;- Original element: &apos;GHMC_PAC.CLick_Know_No_Of_Links_Sample.java&apos;" description="Copy compilation unit" destination="=Java/src&lt;Java_Pac" element1="/&lt;GHMC_PAC{CLick_Know_No_Of_Links_Sample.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1462771648089" units="1" version="1.0"/>
+</session>

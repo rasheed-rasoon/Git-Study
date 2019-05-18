@@ -1,0 +1,1003 @@
+package ts_Factories_Pac.Form_Filling;
+
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.write.Label;
+import jxl.write.WritableCellFormat;
+import jxl.write.WritableFont;
+import jxl.write.WritableSheet;
+import jxl.write.WritableWorkbook;
+
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.pagefactory.ByAll;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class Helper_Ts_Factories
+
+{
+
+	public static Logger Log = Logger.getLogger(Helper_Ts_Factories.class.getName());
+	public WebDriver driver;
+	public int j, k;
+	public int z = 0;
+	public int x = 0;
+	public int l = 0;
+	public int m = 0;
+	public int w = 0;
+	public String get_District = "";
+	public String entreprenuer_Col_header = "";
+	public String get_Application_number = "";
+	public String str = "";
+	public String status = "";
+	public String Process_WebTable_Desired_Value ="";
+	public String col_Header_Value ="";
+	public int prev_Col_Header_Count =0;
+	public String application_Process_Status = "";
+	public int pres_Col_Header_Count =0;
+	public String project_Location = "F:\\RASHEED_Selenium_WorkSpace\\Ts_Fctories";
+	public String Factory_Id ="";
+	public String dOF_Col_header_Name_Text ="";
+	public String district_Name_Text ="";
+	public String district_Name__ForCount="";
+	public String dof_Col_header="";
+	public String  dof_Col_header_ForCount="";
+	public String district_Col_header="";
+
+	// ******************TIME FORMATT********************//
+	DateFormat df = new SimpleDateFormat("yyyy_MMM_dd hh_mm_ss a");
+	Date d = new Date();
+	public String time = df.format(d);
+	// System.out.println(time);
+
+	// *********************SCREENSHOT*******************//
+
+	public void takeScreenShot(String str) throws IOException {
+		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(f, new File(".\\Screenshot\\" + str + "_" + time + ".png"));
+	}// *************Desired dashBoard count**********************//
+
+	public int Previous_desired_DashBoard_Count(int j) throws Exception {
+		login("DOF", "guest");
+		Thread.sleep(2000);
+		List<WebElement> dashBoard_Links = driver.findElements(By.className("panel-heading"));
+
+		int dashBoard_len = dashBoard_Links.size();
+		System.out.println("Dashboard length is " + dashBoard_len);
+		for (int i = 1; i < dashBoard_len; i++) {
+			String dashBoard_LinkText = dashBoard_Links.get(i).getText();
+			// System.out.println(dashBoard_LinkText);
+			try {
+				if (i == 1) // Getting the desired service total number of
+							// applications From DOF login
+				{
+
+					String numberOnly = dashBoard_LinkText.replaceAll("[^0-9]", "");
+
+					m = Integer.parseInt(numberOnly); // total number of
+														// applications in
+														// the desired
+														// Service for
+														// ex:Plan and
+														// approval
+
+					System.out.println(dashBoard_LinkText + "  Previous_DashBoard_Count is    " + m);
+
+				}
+			} catch (Exception e) {
+
+				System.out.println(dashBoard_LinkText + " is not the desired one");
+			}
+		}
+
+		// logout();
+		return m;
+
+	}
+	// ********************************Desired dashBoard
+	// count***************************************//
+
+	public int Present_desired_DashBoard_Count(int j) throws Exception {
+		login("DOF", "guest");
+		Thread.sleep(2000);
+		List<WebElement> dashBoard_Links = driver.findElements(By.className("panel-heading"));
+
+		int dashBoard_len = dashBoard_Links.size();
+		System.out.println("Dashboard length is " + dashBoard_len);
+		for (int i = 1; i < dashBoard_len; i++) {
+			String dashBoard_LinkText = dashBoard_Links.get(i).getText();
+			// System.out.println(dashBoard_LinkText);
+			try {
+				if (i == 2) // Getting the desired service total number of
+							// applications From DOF login
+				{
+
+					String numberOnly = dashBoard_LinkText.replaceAll("[^0-9]", "");
+
+					l = Integer.parseInt(numberOnly); // total number of
+														// applications in
+														// the desired
+														// Service for
+														// ex:Plan and
+														// approval
+
+					System.out.println(dashBoard_LinkText + " Present_DashBoard_Count is   " + l);
+
+				}
+			} catch (Exception e) {
+
+				System.out.println(dashBoard_LinkText + " is not the desired one");
+			}
+		}
+
+		// logout();
+		return l;
+
+	}
+
+	// *******************************WINDOW
+	// HANDLE***************************************************//
+
+	public void PageHandling() {
+		Set<String> str = driver.getWindowHandles();
+		Object obj[] = str.toArray();
+		System.out.println(obj[1]);
+		driver.switchTo().window(obj[1].toString());
+	}
+
+	// *******************MOUSE HOVER*******************//
+
+	public void verifyMouseHOver(String LinkText) {
+		Actions ac = new Actions(driver);
+		WebElement str = driver.findElement(By.xpath(LinkText));
+		ac.moveToElement(str).build().perform();
+	}
+
+	public void entreprenuer_logout() throws Exception {
+		driver.findElement(By.xpath(".//*[@id='lnk6']")).click();
+		Thread.sleep(2000);
+	}
+
+	public void dOF_logout() throws Exception {
+		driver.findElement(By.xpath(".//*[@id='lnk4']")).click();
+		Thread.sleep(2000);
+	}
+
+	public void goToHome_HomePage() throws Exception {
+		driver.findElement(By.xpath(".//*[@id='lnk0']")).click();
+		Thread.sleep(2000);
+	}
+
+	public void compare_Previous_present_total() {
+		if (l == m + 1) {
+			System.out.println("previous and present counts are equal");
+		} else {
+			System.out.println("previous and present counts are not equal");
+
+		}
+	}
+	// public String get_District()
+	// {
+	//
+	// }
+
+	// *****************Login**************************//
+
+	public void login(String uname, String pwd) throws Exception {
+
+		Thread.sleep(2000);
+		driver.findElement(By.partialLinkText("Registered User Login")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='userName']")).sendKeys(uname);
+		driver.findElement(By.xpath(".//*[@id='password']")).sendKeys(pwd);
+		driver.findElement(
+				new ByAll(By.name("login"), By.linkText("    LOGIN "), By.id("login"), By.xpath(".//*[@id='login']")))
+				.click();
+		System.out.println("Login completed");
+		Thread.sleep(3000);
+		// logout();
+		// *****************Login**************************//
+	}
+
+	public String get_Payment_WebTable_content() {
+		get_Application_number = driver
+				.findElement(By.xpath("html/body/div[1]/div[2]/center/form/table/tbody/tr[1]/td[2]")).getText();
+		System.out.println("Apllication number is" + get_Application_number);
+		return get_Application_number;
+	}
+
+	// *******************DATA DRIVEN********************//
+
+	public void dataDriven(String SheetName) throws Exception, IOException {
+		// To read data from EXCEL file
+		FileInputStream fi = new FileInputStream("F:\\RASHEED_Selenium_WorkSpace\\Ts_Fctories\\TestData.xls");
+		Workbook w = Workbook.getWorkbook(fi);
+
+		Sheet s = w.getSheet(SheetName);
+		String str = "";
+
+		Robot robo = new Robot();
+
+		FileOutputStream fo = new FileOutputStream(
+				"F:\\RASHEED_Selenium_WorkSpace\\Ts_Fctories\\Results_" + time + ".xls");
+		WritableWorkbook wb = Workbook.createWorkbook(fo);
+		WritableSheet ws = wb.createSheet("Result", 0);
+		String get_District = ws.getCell(3, 11).getContents();
+		System.out.println("district name is " + get_District);
+		for (int c = 3; c < s.getColumns(); c++) {
+			for (int i = 1; i < s.getRows(); i++) {
+				try {
+					if (s.getCell(2, i).getContents().equalsIgnoreCase("url")) {
+						driver.get(s.getCell(0, i).getContents());
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("dropdown")) {
+						new Select(driver.findElement(By.xpath(s.getCell(0, i).getContents())))
+								.selectByVisibleText(s.getCell(c, i).getContents());
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("textbox")
+							|| s.getCell(2, i).getContents().equalsIgnoreCase("textarea")) {
+						driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
+						driver.findElement(By.id(s.getCell(0, i).getContents())).clear();
+						driver.findElement(By.id(s.getCell(0, i).getContents()))
+								.sendKeys(s.getCell(c, i).getContents());
+
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("button")
+							|| s.getCell(2, i).getContents().equalsIgnoreCase("radiobutton")
+							|| s.getCell(2, i).getContents().equalsIgnoreCase("checkbox")
+							|| s.getCell(2, i).getContents().equalsIgnoreCase("image")) {
+						driver.findElement(By.xpath(s.getCell(0, i).getContents())).click();
+						// System.out.println("Button Clicked");
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("browse")) {
+						driver.findElement(By.name(s.getCell(0, i).getContents()))
+								.sendKeys(s.getCell(3, i).getContents());
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("disabled_TextBox")) {
+						driver.findElement(By.id(s.getCell(0, i).getContents())).click();
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("logout")) {
+						driver.findElement(By.xpath(s.getCell(0, i).getContents())).click();
+						Thread.sleep(3000);
+						// System.out.println("Button Clicked");
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("alert")) {
+						if (s.getCell(c, i).getContents().equalsIgnoreCase("ok")) {
+							driver.switchTo().alert().accept();
+						} else {
+							driver.switchTo().alert().dismiss();
+						}
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("link")) {
+						driver.findElement(By.xpath(s.getCell(0, i).getContents())).click();
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("wait")) {
+						Thread.sleep(1000);
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("mousehover")) {
+						/*
+						 * Actions ac = new Actions(driver);
+						 * ac.moveToElement(driver.findElement(By.xpath(s.
+						 * getCell(0, i).getContents()))).build().perform();
+						 */
+
+						verifyMouseHOver(s.getCell(0, i).getContents());
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("screenshot")) {
+						takeScreenShot(s.getCell(c, i).getContents());
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("datepicker")) {
+						driver.findElement(By.id(s.getCell(c, i).getContents())).click();
+
+						WebElement datepicker = driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']"));
+						// List<WebElement> rows =
+						// datepicker.findElements(By.tagName("tr"));
+						List<WebElement> cols = datepicker.findElements(By.tagName("td"));
+						// System.out.println("Rows:
+						// "+rows.size()+"\nColumns:"+cols.size());
+
+						for (WebElement cell : cols) {
+							if (cell.getText().equals("20")) {
+								cell.findElement(By.linkText("20")).click();
+								break;
+							}
+						}
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("scrolldown")) {
+						robo.keyPress(KeyEvent.VK_PAGE_DOWN);
+					} else if (s.getCell(2, i).getContents().equalsIgnoreCase("scrollup")) {
+						robo.keyPress(KeyEvent.VK_PAGE_UP);
+					}
+					str = "PASS";
+				} catch (Exception e) {
+					str = "FAIL";
+				}
+
+				System.out.println(str);
+				for (int j = 0; j < s.getColumns(); j++) {
+					WritableFont cellFont1 = new WritableFont(WritableFont.TIMES, 12);
+					WritableCellFormat blue = new WritableCellFormat(cellFont1);
+					cellFont1.setColour(jxl.format.Colour.DEFAULT_BACKGROUND1);
+					cellFont1.setBoldStyle(WritableFont.BOLD);
+					Label l = new Label(j, i, s.getCell(j, i).getContents(), blue);
+					ws.addCell(l);
+
+					if (str.equalsIgnoreCase("PASS")) {
+						WritableFont cellFont = new WritableFont(WritableFont.TIMES, 12);
+						WritableCellFormat green = new WritableCellFormat(cellFont);
+						cellFont.setColour(jxl.format.Colour.GREEN);
+						cellFont.setBoldStyle(WritableFont.BOLD);
+
+						Label result = new Label(4, i, str, green);
+						ws.addCell(result);
+					} else if (str.equalsIgnoreCase("FAIL")) {
+						WritableFont cellFont = new WritableFont(WritableFont.TIMES, 12);
+						WritableCellFormat red = new WritableCellFormat(cellFont);
+						cellFont.setColour(jxl.format.Colour.RED);
+						cellFont.setBoldStyle(WritableFont.BOLD);
+
+						Label result = new Label(4, i, str, red);
+						ws.addCell(result);
+					}
+				} // forloop:s.getcolumns
+			} // for loop:for retesting
+
+			WritableFont cellFont = new WritableFont(WritableFont.TIMES, 12);
+			WritableCellFormat aqua = new WritableCellFormat(cellFont);
+			cellFont.setColour(jxl.format.Colour.DEFAULT_BACKGROUND1);
+			cellFont.setBoldStyle(WritableFont.BOLD);
+
+			Label or = new Label(0, 0, "Locators", aqua);
+			Label dn = new Label(1, 0, "Display name", aqua);
+			Label ot = new Label(2, 0, "Object Type ", aqua);
+			Label td = new Label(3, 0, "Testdata", aqua);
+			Label rs = new Label(4, 0, "Result", aqua);
+
+			ws.addCell(or);
+			ws.addCell(dn);
+			ws.addCell(ot);
+			ws.addCell(td);
+			ws.addCell(rs);
+
+			wb.write();
+			wb.close();
+
+		} // forloop:s.getrows
+	}
+	// ********************** ***************************************//
+
+	public void before_App_Submit_Plan_And_Approval_District(String district)// ,
+																				// String
+																				// application_Process_Status
+			throws Exception {
+		String outPut_Fi = "F:\\RASHEED_Selenium_WorkSpace\\Ts_Fctories\\before_Plan_And_Approval_DashBoardData1" + time
+				+ ".xls";
+		FileOutputStream fos = new FileOutputStream(outPut_Fi);
+		WritableWorkbook wb = Workbook.createWorkbook(fos);
+		WritableSheet ws = wb.createSheet("Plan_And_Approval", 0);
+		Label SNO = new Label(0, 5, "S.NO");
+		Label Dst = new Label(1, 5, "District");
+		Label tot_app = new Label(2, 5, "Total Applications");
+		Label Pre_Scru_Pend = new Label(3, 5, "Pre-Scrutiny Pending");
+		Label await_Query_Resp = new Label(4, 5, "Awaiting Query Response");
+		Label approv_undr_proc = new Label(5, 5, "Approval UnderProcess");
+		Label apr_isssued = new Label(6, 5, "Approval Issued");
+		Label appr_await_pmnt = new Label(7, 5, "Approvals Awaiting Payment");
+		Label rej = new Label(8, 5, "Rejected");
+		Label Pre_Status_Count = new Label(11, 5, "Previous Status Count");
+		ws.addCell(SNO);
+		ws.addCell(Dst);
+		ws.addCell(tot_app);
+		ws.addCell(Pre_Scru_Pend);
+		ws.addCell(await_Query_Resp);
+		ws.addCell(approv_undr_proc);
+		ws.addCell(apr_isssued);
+		ws.addCell(appr_await_pmnt);
+		ws.addCell(rej);
+		ws.addCell(Pre_Status_Count);
+		login("DOF", "guest");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("html/body/div[1]/div[2]/center/div[2]/div/div[2]/div/a/div/span[1]")).click();
+		Thread.sleep(2000);
+		new Select(driver.findElement(By.xpath(".//*[@id='appFrom']"))).selectByVisibleText("TS-FACTORIES");
+		Thread.sleep(2000);
+
+		WebElement table = driver.findElement(By.xpath(".//*[@id='dynamic-table']"));
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		for (int i = 0; i < rows.size(); i++) {
+			List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			for (j = 0; j < cells.size(); j++) {
+				k = j;
+				try {
+
+					if (cells.get(k).getText().equals(district)) {
+						for (k = 0; j < cells.size(); k++) {
+							System.out.println(cells.get(k).getText());
+							Label dis = new Label(k, i + 1, cells.get(k).getText());
+							ws.addCell(dis);
+						}
+
+					}
+				} catch (Exception e) {
+					System.out.println("not found");
+				}
+			}
+
+		}
+
+		wb.write();
+		// FileInputStream fl = new FileInputStream(outPut_Fi);
+		// Workbook wRep = Workbook.getWorkbook(fl);
+		//
+		// Sheet sRep = wRep.getSheet("Plan_And_Approval");
+		// for (int m = 0; m < sRep.getColumns(); m++) {
+		// for (int n = 0; n < sRep.getRows(); n++) {
+		// try {
+		// if (sRep.getCell(n, m).getContents().equals(district)) {
+		// String t_count = sRep.getCell(n, m + 1).getContents();
+		// z = Integer.parseInt(t_count);
+		// System.out.println(application_Process_Status+" count is " + z);
+		// }
+		// } catch (Exception e) {
+		// System.out.println("status not found");
+		// }
+		//
+		// }
+		//
+		// }
+		wb.close();
+
+	}
+
+	public int New_before_App_Submit_Plan_And_Approval_District(String district, String application_Process_Status)// ,
+																													// String
+																													// application_Process_Status
+			throws Exception {
+		String outPut_Fi = "F:\\RASHEED_Selenium_WorkSpace\\Ts_Fctories\\before_Plan_And_Approval_DashBoardData1" + time
+				+ ".xls";
+		FileOutputStream fos = new FileOutputStream(outPut_Fi);
+		WritableWorkbook wb = Workbook.createWorkbook(fos);
+		WritableSheet ws = wb.createSheet("Plan_And_Approval", 0);
+		Label SNO = new Label(0, 2, "S.NO");
+		Label Dst = new Label(1, 2, "District");
+		Label tot_app = new Label(2, 2, "Total Applications");
+		Label Pre_Scru_Pend = new Label(3, 2, "Pre-Scrutiny Pending");
+		Label await_Query_Resp = new Label(4, 2, "Awaiting Query Response");
+		Label approv_undr_proc = new Label(5, 2, "Approval UnderProcess");
+		Label apr_isssued = new Label(6, 2, "Approval Issued");
+		Label appr_await_pmnt = new Label(7, 2, "Approvals Awaiting Payment");
+		Label rej = new Label(8, 3, "Rejected");
+		Label Pre_Status_Count = new Label(11, 2, "Previous Status Count");
+		ws.addCell(SNO);
+		ws.addCell(Dst);
+		ws.addCell(tot_app);
+		ws.addCell(Pre_Scru_Pend);
+		ws.addCell(await_Query_Resp);
+		ws.addCell(approv_undr_proc);
+		ws.addCell(apr_isssued);
+		ws.addCell(appr_await_pmnt);
+		ws.addCell(rej);
+		ws.addCell(Pre_Status_Count);
+		login("DOF", "guest");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("html/body/div[1]/div[2]/center/div[2]/div/div[2]/div/a/div/span[1]")).click();
+		Thread.sleep(2000);
+		new Select(driver.findElement(By.xpath(".//*[@id='appFrom']"))).selectByVisibleText("TS-FACTORIES");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("html/body/div[1]/div[2]/center/form/div[4]/div[1]/div/label/input"))
+				.sendKeys(district);
+		Thread.sleep(2000);
+		WebElement table = driver.findElement(By.xpath(".//*[@id='dynamic-table']"));
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		for (int i = 0; i < rows.size(); i++) {
+			List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			for (j = 0; j < cells.size(); j++) {
+				// k = j;
+
+				System.out.println(cells.get(j).getText());
+				Label dis = new Label(j, i + 1, cells.get(j).getText());
+				ws.addCell(dis);
+			}
+
+		}
+		wb.write();
+		wb.close();
+
+		FileInputStream fl = new FileInputStream(outPut_Fi);
+		Workbook wRep = Workbook.getWorkbook(fl);
+
+		Sheet sRep = wRep.getSheet("Plan_And_Approval");
+		for (int m = 0; m < sRep.getRows(); m++) {
+			for (int n = 0; n < sRep.getColumns(); n++) {
+				try {
+					if (sRep.getCell(n, m).getContents().equals(application_Process_Status)) {
+						String t_count = sRep.getCell(n, m + 1).getContents();
+						z = Integer.parseInt(t_count);
+						System.out.println(application_Process_Status + " count  is  " + z);
+					}
+				} catch (Exception e) {
+					System.out.println("status not found");
+				}
+
+			}
+
+		}
+		return z;
+
+	}
+
+	public int New_After_App_Submit_Plan_And_Approval_District(String district, String application_Process_Status) // ,
+																													// String
+																													// application_Process_Status
+			throws Exception {
+		String outPut_Fi = "F:\\RASHEED_Selenium_WorkSpace\\Ts_Fctories\\before_Plan_And_Approval_DashBoardData1" + time
+				+ ".xls";
+		FileOutputStream fos = new FileOutputStream(outPut_Fi);
+		WritableWorkbook wb = Workbook.createWorkbook(fos);
+		WritableSheet ws = wb.createSheet("Plan_And_Approval", 0);
+		Label SNO = new Label(0, 2, "S.NO");
+		Label Dst = new Label(1, 2, "District");
+		Label tot_app = new Label(2, 2, "Total Applications");
+		Label Pre_Scru_Pend = new Label(3, 2, "Pre-Scrutiny Pending");
+		Label await_Query_Resp = new Label(4, 2, "Awaiting Query Response");
+		Label approv_undr_proc = new Label(5, 2, "Approval UnderProcess");
+		Label apr_isssued = new Label(6, 2, "Approval Issued");
+		Label appr_await_pmnt = new Label(7, 2, "Approvals Awaiting Payment");
+		Label rej = new Label(8, 3, "Rejected");
+		Label Pre_Status_Count = new Label(11, 2, "Previous Status Count");
+		ws.addCell(SNO);
+		ws.addCell(Dst);
+		ws.addCell(tot_app);
+		ws.addCell(Pre_Scru_Pend);
+		ws.addCell(await_Query_Resp);
+		ws.addCell(approv_undr_proc);
+		ws.addCell(apr_isssued);
+		ws.addCell(appr_await_pmnt);
+		ws.addCell(rej);
+		ws.addCell(Pre_Status_Count);
+		login("DOF", "guest");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("html/body/div[1]/div[2]/center/div[2]/div/div[2]/div/a/div/span[1]")).click();
+		Thread.sleep(2000);
+		new Select(driver.findElement(By.xpath(".//*[@id='appFrom']"))).selectByVisibleText("TS-FACTORIES");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("html/body/div[1]/div[2]/center/form/div[4]/div[1]/div/label/input"))
+				.sendKeys(district);
+		Thread.sleep(2000);
+		WebElement table = driver.findElement(By.xpath(".//*[@id='dynamic-table']"));
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		for (int i = 0; i < rows.size(); i++) {
+			List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			for (j = 0; j < cells.size(); j++) {
+				// k = j;
+
+				System.out.println(cells.get(j).getText());
+				Label dis = new Label(j, i + 1, cells.get(j).getText());
+				ws.addCell(dis);
+			}
+
+		}
+		wb.write();
+		wb.close();
+
+		FileInputStream fl = new FileInputStream(outPut_Fi);
+		Workbook wRep = Workbook.getWorkbook(fl);
+
+		Sheet sRep = wRep.getSheet("Plan_And_Approval");
+		for (int m = 0; m < sRep.getRows(); m++) {
+			for (int n = 0; n < sRep.getColumns(); n++) {
+				try {
+					if (sRep.getCell(n, m).getContents().equals(application_Process_Status)) {
+						String t_count = sRep.getCell(n, m + 1).getContents();
+						w = Integer.parseInt(t_count);
+						System.out.println(application_Process_Status + " count  is  " + w);
+					}
+				} catch (Exception e) {
+					System.out.println("status not found");
+				}
+
+			}
+
+		}
+		return w;
+
+	}
+
+	public String entreprenuerLogin_WebTable(String entreprenuer_Col_header, String application_Num) {
+
+		WebElement table = driver.findElement(By.xpath("html/body/div[1]/div[2]/center/table[1]/tbody/tr[2]/td/table"));
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		System.out.println("rows size is " + rows.size());
+		for (int i = 0; i < rows.size(); i++) {
+
+			List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			for (j = 0; j < cells.size(); j++) {
+				// k = j;
+
+				// System.out.println("row "+i+"and coulumn " +j+ " is "+
+				// cells.get(j).getText());
+				try {
+					if (cells.get(j).getText().equals(application_Num)) {
+						switch (entreprenuer_Col_header) {
+						case "Form Submission":
+							System.out.println(cells.get(j + 1).getText());
+							str = cells.get(j + 1).getText();
+							break;
+						case "Submission Date":
+							System.out.println(cells.get(j + 2).getText());
+							str = cells.get(j + 2).getText();
+							break;
+						case "Payment Status":
+							System.out.println(cells.get(j + 3).getText());
+							str = cells.get(j + 3).getText();
+							break;
+						case "Status":
+							System.out.println(cells.get(j + 4).getText());
+							str = cells.get(j + 4).getText();
+							break;
+						case "Officer Remarks":
+							System.out.println(cells.get(j + 5).getText());
+							str = cells.get(j + 5).getText();
+							break;
+						case "Respond to Query":
+							System.out.println(cells.get(j + 6).getText());
+							str = cells.get(j + 6).getText();
+							break;
+						case "View / Download":
+							System.out.println(cells.get(j + 7).getText());
+							str = cells.get(j + 7).getText();
+							break;
+						default:
+							System.out.println("Invalid selection ");
+							break;
+
+						}
+
+					}
+				} catch (Exception e) {
+					System.out.println("not the desired one ");
+				}
+
+			}
+
+		}
+		return str;
+
+	}
+
+	public void verify_Status(String status) {
+		Assert.assertEquals(str, status);
+		if (str.equals(status))
+			System.out.println("actual and expected are  same");
+
+	}
+
+	public int previous__Col_Header_Count_DOF() throws Exception {
+		Thread.sleep(2000);
+		WebElement table = driver.findElement(By.xpath(".//*[@id='dynamic-table']"));
+
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		System.out.println("rows size is " + rows.size());
+		for (int i = 0; i < rows.size(); i++) {
+
+			List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			for (j = 0; j < cells.size(); j++) {
+				// k = j;
+
+				// System.out.println("row "+i+"and coulumn " +j+ " is "+
+				// cells.get(j).getText());
+				try {
+					if (cells.get(j).getText().equals("Medak")) { //district_Name__ForCount
+						switch ("Pre-Scrutiny Pending") {//dof_Col_header_ForCount
+						case "Total Applications":
+							System.out.println(cells.get(j + 1).getText());
+							prev_Col_Header_Count = Integer.parseInt(cells.get(j + 1).getText());
+							break;
+						case "Pre-Scrutiny Pending":
+							System.out.println(cells.get(j + 2).getText());
+							prev_Col_Header_Count = Integer.parseInt(cells.get(j + 2).getText());
+							break;
+						case "Awaiting Query Response":
+							System.out.println(cells.get(j + 3).getText());
+							prev_Col_Header_Count = Integer.parseInt(cells.get(j + 3).getText());
+							break;
+						case "Approval UnderProcess":
+							System.out.println(cells.get(j + 4).getText());
+							prev_Col_Header_Count = Integer.parseInt(cells.get(j + 4).getText());
+							break;
+						case "Approval Issued":
+							System.out.println(cells.get(j + 5).getText());
+							prev_Col_Header_Count = Integer.parseInt(cells.get(j + 5).getText());
+							break;
+						case "Approvals Awaiting Payment":
+							System.out.println(cells.get(j + 6).getText());
+							prev_Col_Header_Count = Integer.parseInt(cells.get(j + 6).getText());
+							break;
+						case "Rejected":
+							System.out.println(cells.get(j + 7).getText());
+							prev_Col_Header_Count = Integer.parseInt(cells.get(j + 7).getText());
+							break;
+						default:
+							System.out.println("Invalid selection");
+							break;
+
+						}
+
+					}
+				} catch (Exception e) {
+					System.out.println("not the desired one ");
+				}
+
+			}
+
+		}
+		return prev_Col_Header_Count;
+	}
+
+	public int present__Col_Header_Count_DOF(String district_Name, String dof_Col_header) throws Exception {
+		// driver.findElement(By.xpath("html/body/div/div[2]/center/div[2]/div/div[2]/div/a/div/span[1]")).click();
+		// Thread.sleep(3000);
+		// new
+		// Select(driver.findElement(By.xpath(".//*[@id='appFrom']"))).selectByVisibleText("TS-FACTORIES");
+		Thread.sleep(2000);
+		WebElement table = driver.findElement(By.xpath(".//*[@id='dynamic-table']"));
+
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		System.out.println("rows size is " + rows.size());
+		for (int i = 0; i < rows.size(); i++) {
+
+			List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			for (j = 0; j < cells.size(); j++) {
+				// k = j;
+
+				// System.out.println("row "+i+"and coulumn " +j+ " is "+
+				// cells.get(j).getText());
+				try {
+					if (cells.get(j).getText().equals(district_Name)) {
+						switch (dof_Col_header) {
+						case "Total Applications":
+							System.out.println(cells.get(j + 1).getText());
+							pres_Col_Header_Count = Integer.parseInt(cells.get(j + 1).getText());
+							break;
+						case "Pre-Scrutiny Pending":
+							System.out.println(cells.get(j + 2).getText());
+							pres_Col_Header_Count = Integer.parseInt(cells.get(j + 2).getText());
+							break;
+						case "Awaiting Query Response":
+							System.out.println(cells.get(j + 3).getText());
+							pres_Col_Header_Count = Integer.parseInt(cells.get(j + 3).getText());
+							break;
+						case "Approval UnderProcess":
+							System.out.println(cells.get(j + 4).getText());
+							pres_Col_Header_Count = Integer.parseInt(cells.get(j + 4).getText());
+							break;
+						case "Approval Issued":
+							System.out.println(cells.get(j + 5).getText());
+							pres_Col_Header_Count = Integer.parseInt(cells.get(j + 5).getText());
+							break;
+						case "Approvals Awaiting Payment":
+							System.out.println(cells.get(j + 6).getText());
+							pres_Col_Header_Count = Integer.parseInt(cells.get(j + 6).getText());
+							break;
+						case "Rejected":
+							System.out.println(cells.get(j + 7).getText());
+							pres_Col_Header_Count = Integer.parseInt(cells.get(j + 7).getText());
+							break;
+						default:
+							System.out.println("Invalid selection");
+							break;
+
+						}
+
+					}
+				} catch (Exception e) {
+					System.out.println("not the desired one ");
+				}
+
+			}
+
+		}
+		return pres_Col_Header_Count;
+	}
+
+	public void click_View_Report_Select_TSFactories() throws Exception {
+		driver.findElement(By.xpath("html/body/div/div[2]/center/div[2]/div/div[2]/div/a/div/span[1]")).click();
+		Thread.sleep(3000);
+		new Select(driver.findElement(By.xpath(".//*[@id='appFrom']"))).selectByVisibleText("TS-FACTORIES");
+	}
+
+	public String dofLogin_WebTable() throws Exception {
+//		driver.findElement(By.xpath("html/body/div/div[2]/center/div[2]/div/div[2]/div/a/div/span[1]")).click();
+//		Thread.sleep(3000);
+//		new Select(driver.findElement(By.xpath(".//*[@id='appFrom']"))).selectByVisibleText("TS-FACTORIES");
+		Thread.sleep(2000);
+		WebElement table = driver.findElement(By.xpath(".//*[@id='dynamic-table']"));
+
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		System.out.println("rows size is " + rows.size());
+		for (int i = 0; i < rows.size(); i++) {
+
+			List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			for (j = 0; j < cells.size(); j++) {
+				// k = j;
+
+				// System.out.println("row "+i+"and coulumn " +j+ " is "+
+				// cells.get(j).getText());
+				try {
+					if (cells.get(j).getText().equals("Medak")) {
+						switch ("Pre-Scrutiny Pending") {
+						case "Total Applications":
+							System.out.println(cells.get(j + 1).getText());
+							col_Header_Value = cells.get(j + 1).getText();
+							driver.findElement(By.linkText(col_Header_Value)).click();
+							break;
+						case "Pre-Scrutiny Pending":
+							System.out.println(cells.get(j + 2).getText());
+							col_Header_Value = cells.get(j + 2).getText();
+							driver.findElement(By.linkText(col_Header_Value)).click();
+							break;
+						case "Awaiting Query Response":
+							System.out.println(cells.get(j + 3).getText());
+							col_Header_Value = cells.get(j + 3).getText();
+							driver.findElement(By.linkText(col_Header_Value)).click();
+							break;
+						case "Approval UnderProcess":
+							System.out.println(cells.get(j + 4).getText());
+							col_Header_Value = cells.get(j + 4).getText();
+							driver.findElement(By.linkText(col_Header_Value)).click();
+							break;
+						case "Approval Issued":
+							System.out.println(cells.get(j + 5).getText());
+							col_Header_Value = cells.get(j + 5).getText();
+							driver.findElement(By.linkText(col_Header_Value)).click();
+							break;
+						case "Approvals Awaiting Payment":
+							System.out.println(cells.get(j + 6).getText());
+							col_Header_Value = cells.get(j + 6).getText();
+							driver.findElement(By.linkText(col_Header_Value)).click();
+							break;
+						case "Rejected":
+							System.out.println(cells.get(j + 7).getText());
+							col_Header_Value = cells.get(j + 7).getText();
+							driver.findElement(By.linkText(col_Header_Value)).click();
+							break;
+						default:
+							System.out.println("Invalid selection");
+							break;
+
+						}
+
+					}
+				} catch (Exception e) {
+					System.out.println("not the desired one ");
+				}
+
+			}
+
+		}
+		
+		return col_Header_Value;
+		
+	}
+	///////////////////////////// Application process in DOF after payment
+	///////////////////////////// //////////////////////////////
+	
+	public void dofLogin_App_Process_WebTable(Factory_Id,district_Col_header) throws Exception {
+		System.out.println("Factory_Id is " +Factory_Id );
+		Thread.sleep(3000);
+
+		WebElement table = driver.findElement(By.xpath(".//*[@id='dynamic-table']"));
+
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		System.out.println("rows size is " + rows.size());
+		for (int i = 0; i < rows.size(); i++) {
+
+			List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			for (j = 0; j < cells.size(); j++) {
+				// k = j;
+
+				// System.out.println("row "+i+"and coulumn " +j+ " is "+
+				// cells.get(j).getText());
+				try {
+					if (cells.get(j).getText().equals(Factory_Id)) {
+					
+						switch (district_Col_header) {
+						case "Factory Name":
+
+							Process_WebTable_Desired_Value = cells.get(j + 1).getText();
+							System.out.println("Value is "+cells.get(j + 1).getText());
+							
+							break;
+						case "Communication Address":
+							Process_WebTable_Desired_Value = cells.get(j + 2).getText();
+							System.out.println("Value is "+cells.get(j + 2).getText());
+							
+						
+							break;
+						case "Application Received Date":
+							Process_WebTable_Desired_Value = cells.get(j + 3).getText();
+							System.out.println("Value is "+cells.get(j + 3).getText());
+							
+						
+							break;
+						case "Status":
+							Process_WebTable_Desired_Value = cells.get(j + 4).getText();
+							System.out.println("Value is "+cells.get(j + 4).getText());
+							
+							break;
+						case "View/Download certificate/Process":
+							Process_WebTable_Desired_Value = cells.get(j + 5).getText();
+							Thread.sleep(2000);
+							driver.findElement(By.linkText(Process_WebTable_Desired_Value)).click();
+							System.out.println("Value is "+cells.get(j + 5).getText());
+								
+							
+							
+							break;
+						default:
+							System.out.println("Invalid selection");
+							break;
+
+						}
+
+					}
+				} catch (Exception e) {
+					System.out.println("not the desired one ");
+				}
+
+			}
+
+		}
+		System.out.println("Desired value is " + Process_WebTable_Desired_Value);
+		Thread.sleep(2000);
+		Assert.assertEquals(Process_WebTable_Desired_Value,"Process");
+		Thread.sleep(2000);
+		Thread.sleep(2000);
+		driver.findElement(By.linkText(Process_WebTable_Desired_Value)).click();
+		
+		//driver.findElement(By.linkText(Process_WebTable_Desired_Value)).click();
+
+	}
+
+	public void dof_Select_Status(String type_Of_Status) {
+		new Select(driver.findElement(By.xpath("html/body/div/div[2]/center/form/div/table/tbody/tr[19]/td/select")))
+				.selectByVisibleText(type_Of_Status);
+		driver.findElement(By.xpath(".//*[@id='remarks']")).sendKeys(type_Of_Status);
+		driver.findElement(By.xpath(".//*[@id='form_div']/tbody/tr[24]/td/input[1]")).click();
+	}
+
+	// ********************** ***************************************//
+
+	@BeforeMethod
+	public void BeforeTest() throws Exception {
+		// driver = new FirefoxDriver();
+		// driver.manage().window().maximize();
+		//
+		// driver.get("http://test.cgg.gov.in/tsfactories/home.do");
+		// Thread.sleep(4000);
+		// Log.info("navigating to url");
+
+		String exePath = "F:\\softwares\\Drivers\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", exePath);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://test.cgg.gov.in/tsfactories/");
+		Thread.sleep(2000);
+	}
+
+	@AfterMethod
+	public void AfterTest() {
+		// driver.manage().timeouts().implicitlyWait(03, TimeUnit.SECONDS);
+		// driver.quit();
+	}
+}

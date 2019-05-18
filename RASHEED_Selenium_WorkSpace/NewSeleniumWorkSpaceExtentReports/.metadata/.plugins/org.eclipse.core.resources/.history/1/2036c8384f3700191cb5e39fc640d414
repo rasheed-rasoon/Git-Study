@@ -1,0 +1,49 @@
+package practicePac;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+
+public class MavenPractSample {
+	public WebDriver driver;
+	
+	@Test
+	public void executesessionone()
+	{
+		
+		System.setProperty("webdriver.chrome.driver","F:\\softwares\\Drivers\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("http://inctest.apcgg.gov.in");
+		driver.manage().window().maximize();
+		//driver.close();
+		}
+		
+	@Test
+	public void executesessionTwo()
+	{
+		
+		System.setProperty("webdriver.chrome.driver","F:\\softwares\\Drivers\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("http://inctest.apcgg.gov.in");
+		driver.manage().window().maximize();
+	driver.close();
+		}
+		
+		
+		@Test
+		public void executeSessionThree()
+		{
+			System.setProperty("webdriver.gecko.driver","F:\\softwares\\Drivers\\geckodriver.exe");
+			driver=new FirefoxDriver();
+			driver.get("http://inctest.apcgg.gov.in");
+			driver.manage().window().maximize();
+			//driver.close();
+			
+		}
+
+		
+	
+	
+}

@@ -1,0 +1,278 @@
+package com.org.Maven_Practice;
+
+import org.testng.annotations.BeforeTest;
+
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.write.Label;
+import jxl.write.WritableCellFormat;
+import jxl.write.WritableFont;
+import jxl.write.WritableSheet;
+import jxl.write.WritableWorkbook;
+
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.pagefactory.ByAll;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
+
+public class Helper 
+{
+		public WebDriver driver;
+	
+	 	//******************TIME FORMATT********************//
+		DateFormat df=new SimpleDateFormat("yyyy_MMM_dd hh_mm_ss a");
+	 	Date d=new Date();
+	 	String time=df.format(d);
+	 	//System.out.println(time);
+	 	//////////*******Login method**************/////////////////
+	 	public void login() throws InterruptedException
+	 	{
+	 		 Thread.sleep(2000);
+	 		 driver.findElement(By.partialLinkText("Registered User Login")).click(); 
+	 	   // driver.findElement(By.xpath(".//*[@id='login_type_div1']/a[2]")).click();  //Registered user log in
+	        Thread.sleep(2000);
+	        driver.findElement(By.xpath(".//*[@id='userName']")).sendKeys("rasheed");
+	        driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("R@sheed66");
+	        driver.findElement(new ByAll(By.name("login"),
+	                    By.linkText("    LOGIN "),
+	                    By.id("login"),
+	                    By.xpath(".//*[@id='login']"))).click();
+	        Thread.sleep(3000);
+	        driver.findElement(By.id("lnk1")).click();
+	        boolean present=driver.findElement(By.xpath(".//*[@id='lnk1']")).isEnabled();
+	        System.out.println("element status is "+present);
+	        
+	 		
+	 	}
+	 	
+	 	//*********************SCREENSHOT*******************//
+	 	public void takeScreenShot(String str) throws IOException
+	 	{			  
+			File f = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(f, new File(".\\Screenshot\\"+str+"_"+time+".png"));		
+		}
+	 	
+	 	//******************WINDOW HANDLE*******************//
+	 	public void PageHandling()
+	 	{
+	 		Set<String> str=driver.getWindowHandles();
+		    Object obj[]=str.toArray();
+		    System.out.println(obj[1]);
+		    driver.switchTo().window(obj[1].toString());		    
+	 	}
+	 	
+	 	//*******************MOUSE HOVER*******************//
+	 	public void verifyMouseHOver(String LinkText)
+	 	{
+	 		Actions ac = new Actions(driver);
+	 		WebElement str = driver.findElement(By.xpath(LinkText));
+	 		ac.moveToElement(str).build().perform();
+	 	}
+	  
+	 	//*******************DATA DRIVEN********************//
+	 	public void dataDriven() throws Exception, IOException 
+	 	{
+	 		  // To read data from EXCEL file  
+	 		  FileInputStream fi=new FileInputStream("F:\\RASHEED_Selenium_WorkSpace\\Maven_Practice\\TestInput.xls");
+	 		  Workbook w = Workbook.getWorkbook(fi);
+	 		  
+	 		  Sheet s = w.getSheet(0);
+	 		  String str = "";
+	 		  
+	 		  Robot robo = new Robot();
+	 		  
+	 		  FileOutputStream fo = new FileOutputStream("F:\\RASHEED_Selenium_WorkSpace\\Maven_Practice\\Results_"+time+".xls");
+	 		  WritableWorkbook wb = Workbook.createWorkbook(fo);	 		
+	 		  WritableSheet ws = wb.createSheet("Result", 0);	
+	 		  
+	 		  for(int c=3; c<s.getColumns(); c++)
+	 		  {
+	 			  for (int i = 1; i < s.getRows(); i++) 
+	 			  {
+	 				  try
+	 				  {			
+	 					  if(s.getCell(2, i).getContents().equalsIgnoreCase("url"))
+	 					  {
+	 						  driver.get(s.getCell(0, i).getContents());
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("dropdown"))	
+	 					  {
+	 						  new Select(driver.findElement(By.xpath(s.getCell(0, i).getContents()))).selectByVisibleText(s.getCell(c, i).getContents());					  
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("textbox"))
+	 					  {
+	 						  driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
+	 						  driver.findElement(By.name(s.getCell(0, i).getContents())).clear();
+	 						  driver.findElement(By.name(s.getCell(0, i).getContents())).sendKeys(s.getCell(c,i).getContents());
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("button")
+	 							  ||s.getCell(2, i).getContents().equalsIgnoreCase("radiobutton")
+	 							  ||s.getCell(2, i).getContents().equalsIgnoreCase("checkbox")
+	 							  ||s.getCell(2, i).getContents().equalsIgnoreCase("image"))
+	 					  {
+	 						 driver.findElement(By.xpath(s.getCell(0, i).getContents())).click();
+	 						 //System.out.println("Button Clicked");
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("alert"))
+	 					  {
+	 						  if(s.getCell(c, i).getContents().equalsIgnoreCase("ok"))
+	 						  {
+	 							  driver.switchTo().alert().accept();
+	 						  }
+	 						  else
+	 						  {
+	 							  driver.switchTo().alert().dismiss();
+	 						  }
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("link"))
+	 					  {
+	 						  driver.findElement(By.xpath(s.getCell(0, i).getContents())).click();	 						 
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("wait"))
+	 					  {
+	 						  Thread.sleep(1000);
+	 					  }	
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("mousehover"))
+	 					  {
+	 						 /* Actions ac = new Actions(driver);
+	 						  ac.moveToElement(driver.findElement(By.xpath(s.getCell(0, i).getContents()))).build().perform();*/
+	 						  
+	 						  verifyMouseHOver(s.getCell(0, i).getContents());
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("screenshot"))
+	 					  {
+	 						  takeScreenShot(s.getCell(c, i).getContents());
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("datepicker"))
+	 					  {
+	 						 driver.findElement(By.id(s.getCell(c, i).getContents())).click();
+	 							 						
+	 						WebElement datepicker = driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']"));
+	 						//List<WebElement> rows = datepicker.findElements(By.tagName("tr"));
+	 						List<WebElement> cols = datepicker.findElements(By.tagName("td"));
+	 						//System.out.println("Rows: "+rows.size()+"\nColumns:"+cols.size());
+	 						
+	 						for (WebElement cell : cols) 
+	 						{
+	 							if(cell.getText().equals("20"))
+	 							{
+	 								cell.findElement(By.linkText("20")).click();
+	 								break;
+	 							}		
+	 						}
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("scrolldown"))
+	 					  {	 						 
+	 						  robo.keyPress(KeyEvent.VK_PAGE_DOWN);
+	 					  }
+	 					  else if(s.getCell(2, i).getContents().equalsIgnoreCase("scrollup"))
+	 					  {
+	 						  robo.keyPress(KeyEvent.VK_PAGE_UP);
+	 					  }
+	 					  str="PASS";	
+	 				  }
+	 				  catch(Exception e)
+	 				  {
+	 					  str="FAIL";
+	 				  }
+	 			  
+	 				  System.out.println(str);	 				  
+	 				  for (int j = 0; j < s.getColumns(); j++) 
+	 				  {
+	 					  WritableFont cellFont1 = new WritableFont(WritableFont.TIMES, 12);
+						  WritableCellFormat blue = new WritableCellFormat(cellFont1);
+						  cellFont1.setColour(jxl.format.Colour.DEFAULT_BACKGROUND1);
+						  cellFont1.setBoldStyle(WritableFont.BOLD);
+	 					  Label l=new Label(j, i, s.getCell(j, i).getContents(), blue);
+	 					  ws.addCell(l);
+	 					  
+	 					  if(str.equalsIgnoreCase("PASS"))
+	 					  {
+	 						  WritableFont cellFont = new WritableFont(WritableFont.TIMES, 12);
+	 						  WritableCellFormat green = new WritableCellFormat(cellFont);
+	 						  cellFont.setColour(jxl.format.Colour.GREEN);
+	 						  cellFont.setBoldStyle(WritableFont.BOLD);
+	 						  
+	 						  Label result=new Label(4, i, str, green);
+	 						  ws.addCell(result);
+	 					  }
+	 					  else if(str.equalsIgnoreCase("FAIL"))
+	 					  {
+	 						  WritableFont cellFont = new WritableFont(WritableFont.TIMES, 12);
+	 						  WritableCellFormat red = new WritableCellFormat(cellFont);
+	 						  cellFont.setColour(jxl.format.Colour.RED);
+	 						  cellFont.setBoldStyle(WritableFont.BOLD);
+	 						  
+	 						  Label result=new Label(4, i, str, red);
+	 						  ws.addCell(result);
+	 					  }
+	 				  }	// forloop:s.getcolumns  			
+	 			 }//for loop:for retesting
+	 			  	 			  
+	 			  WritableFont cellFont = new WritableFont(WritableFont.TIMES, 12);
+				  WritableCellFormat aqua = new WritableCellFormat(cellFont);
+				  cellFont.setColour(jxl.format.Colour.DEFAULT_BACKGROUND1);
+				  cellFont.setBoldStyle(WritableFont.BOLD);
+	 			  
+				  Label or=new Label(0,0,"Locators",aqua);
+				  Label dn=new Label(1,0,"Display name",aqua);
+				  Label ot=new Label(2,0,"Object Type ",aqua);
+				  Label td=new Label(3,0,"Testdata",aqua);	 				
+				  Label rs=new Label(4,0,"Result",aqua);
+			
+				  ws.addCell(or);
+				  ws.addCell(dn);
+				  ws.addCell(ot);
+				  ws.addCell(td);	 				
+				  ws.addCell(rs);
+	 		  
+				  wb.write();
+				  wb.close(); 
+	 			  
+	 		  }// forloop:s.getrows
+	 	}	 	
+	 
+	 	@BeforeTest
+	 	public void beforeTest() throws Exception 
+	 	{
+//	 		driver = new FirefoxDriver();
+//	 		driver.manage().window().maximize();	
+//	 		driver.get("http://test.cgg.gov.in/tsfactories/home.do");
+//	 		Thread.sleep(4000);
+	 		String exePath = "F:\\softwares\\Drivers\\chromedriver.exe";
+			System.setProperty("webdriver.chrome.driver", exePath);
+			WebDriver driver = new ChromeDriver();
+			driver.manage().window().maximize();
+
+			//driver.get("http://toolsqa.com/automation-practice-form/");
+		  driver.get("http://test.cgg.gov.in/tsfactories/home.do");
+		  Thread.sleep(4000);
+	 	}
+
+	 	@AfterTest
+	 	public void afterTest() 
+	 	{	 		
+	 		//driver.manage().timeouts().implicitlyWait(03, TimeUnit.SECONDS);
+	 		driver.quit();
+	 	}
+	 }

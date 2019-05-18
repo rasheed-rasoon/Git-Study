@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ts Factories Services]">
+  <test name="TsFact Test(failed)">
+    <classes>
+      <class name="com.cgg.testcases.PlanOfApprovalTest">
+        <methods>
+          <include name="planOfApprovalFormFilling" invocation-numbers="1 2 12"/>
+        </methods>
+      </class> <!-- com.cgg.testcases.PlanOfApprovalTest -->
+      <class name="com.cgg.testcases.LoginTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.cgg.testcases.LoginTest -->
+      <class name="com.cgg.testcases.NewFactoryRegistrationTest">
+        <methods>
+          <include name="testNewRegistration" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.cgg.testcases.NewFactoryRegistrationTest -->
+      <class name="com.cgg.testcases.RegGrantOfLicenceTest">
+        <methods>
+          <include name="f" invocation-numbers="1 4 7 10 20 51"/>
+        </methods>
+      </class> <!-- com.cgg.testcases.RegGrantOfLicenceTest -->
+    </classes>
+  </test> <!-- TsFact Test(failed) -->
+</suite> <!-- Failed suite [Ts Factories Services] -->

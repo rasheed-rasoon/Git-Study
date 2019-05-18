@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestBase.java&apos; to &apos;GHMC/src/test/java/com.ghmc.lr.testcases&apos;&#x0D;&#x0A;- Original project: &apos;tsfact&apos;&#x0D;&#x0A;- Destination element: &apos;GHMC/src/test/java/com.ghmc.lr.testcases&apos;&#x0D;&#x0A;- Original element: &apos;com.cgg.testcases.TestBase.java&apos;" description="Copy compilation unit" destination="=GHMC/src\/test\/java&lt;com.ghmc.lr.testcases" element1="/src&lt;com.cgg.testcases{TestBase.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1499059491851" units="1" version="1.0"/>
+</session>

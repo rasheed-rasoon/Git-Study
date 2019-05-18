@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37316" started-at="2019-02-23T10:04:43Z" finished-at="2019-02-23T10:05:20Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="37316" started-at="2019-02-23T10:04:43Z" finished-at="2019-02-23T10:05:20Z">
+      <class name="practicePac.MavenPractSample">
+        <test-method status="PASS" signature="executeSessionThree()[pri:0, instance:practicePac.MavenPractSample@5d5eef3d]" name="executeSessionThree" duration-ms="14092" started-at="2019-02-23T15:34:43Z" finished-at="2019-02-23T15:34:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeSessionThree -->
+        <test-method status="PASS" signature="executesessionTwo()[pri:0, instance:practicePac.MavenPractSample@5d5eef3d]" name="executesessionTwo" duration-ms="16149" started-at="2019-02-23T15:34:57Z" finished-at="2019-02-23T15:35:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executesessionTwo -->
+        <test-method status="PASS" signature="executesessionone()[pri:0, instance:practicePac.MavenPractSample@5d5eef3d]" name="executesessionone" duration-ms="7060" started-at="2019-02-23T15:35:13Z" finished-at="2019-02-23T15:35:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executesessionone -->
+      </class> <!-- practicePac.MavenPractSample -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

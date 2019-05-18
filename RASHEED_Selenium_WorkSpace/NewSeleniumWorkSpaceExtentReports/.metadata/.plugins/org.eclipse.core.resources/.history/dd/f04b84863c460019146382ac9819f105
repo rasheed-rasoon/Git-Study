@@ -1,0 +1,34 @@
+package rough;
+
+public class StudentData implements Comparable<StudentData> {
+	
+	int age;
+	String name;
+	int id;
+	
+	public StudentData(int age,String name,int id)
+	{
+		this.age=age;
+		this.name=name;
+		this.id=id;
+	}
+
+	public int compareTo(StudentData obj) {
+		if(age==obj.age)
+		return 0;
+		if(age>obj.age)
+			return 1;
+		
+		else
+			return -1;
+	}
+}
+
+class DataSample
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;ts_Factories_Pac.Ts_Fctories&apos; to &apos;ts_Factories_Pac.Form_Filling&apos;&#x0D;&#x0A;- Original project: &apos;Ts_Fctories&apos;&#x0D;&#x0A;- Original element: &apos;Ts_Fctories/src/test/java/ts_Factories_Pac.Ts_Fctories&apos;&#x0D;&#x0A;- Renamed element: &apos;Ts_Fctories/src/test/java/ts_Factories_Pac.Form_Filling&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;ts_Factories_Pac.Ts_Fctories&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java&lt;ts_Factories_Pac.Ts_Fctories" name="ts_Factories_Pac.Form_Filling" qualified="false" references="true" stamp="1467031118872" textual="false" version="1.0"/>
+</session>
